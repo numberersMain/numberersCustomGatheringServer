@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "01a12230-a18b-721e-bf21-0ee836fa989d",
+      "name": "Sean Maxwell",
+      "email": "smaxwell@example.com",
+      "created": "2024-03-22T05:14:36.252Z"
+    },
+    {
+      "id": "01a12230-a18c-7473-b1f0-845016f412d3",
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "created": "2024-03-22T05:20:55.079Z"
+    },
+    {
+      "id": "01a12230-a18c-7473-b1f1-88ed3ea1d5ae",
+      "name": "Gordan Freeman",
+      "email": "nova@prospect.com",
+      "created": "2024-03-22T05:42:18.895Z"
+    }
+  ],
+  "sets": [
+    {
+      "id": "01a1750f-2d20-70b7-9cab-27c4a78c1466",
+      "created": "2026-10-25T21:54:51.300Z",
+      "scryfallUri": "https://scryfall.com/sets/dtk",
+      "uri": "https://api.scryfall.com/sets/7e72625f-f320-4552-a719-d11e2f1853bd",
+      "searchUri": "https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e%3Adtk&unique=prints",
+      "cardCount": 264,
+      "printSize": 264,
+      "name": "Dragons of Tarkir",
+      "code": "DTK"
+    },
+    {
+      "id": "01a1750f-8d06-72d4-9b78-ba9013725b8e",
+      "created": "2026-10-25T21:55:15.846Z",
+      "author": "Unnamed Author",
+      "copyright": "",
+      "content": "",
+      "name": "Khans of Tarkir",
+      "code": "KTK"
+    }
+  ]
+}

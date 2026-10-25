@@ -1,0 +1,23 @@
+{
+  "name": "ncg-server",
+  "version": "1.0.0",
+  "description": "numby CG server",
+  "keywords": [
+    "mtg"
+  ],
+  "license": "ISC",
+  "author": "numberers",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test.ts"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
