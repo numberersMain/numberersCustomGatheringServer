@@ -1,0 +1,7 @@
+### Get existing set
+GET https://api.scryfall.com/sets/DTK
+Accept: application/json;q=0.9,*/*;q=0.8
+
+### Get njonexisting set
+GET https://api.scryfall.com/sets/BTK
+Accept: application/json;q=0.9,*/*;q=0.8
