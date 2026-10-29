@@ -2,9 +2,8 @@ import { instance } from "../persistance/persistance.ts";
 import { loadSetFromScryfall, setExistsOfficially } from "../web/index.ts";
 import { Entity } from "./entity.ts";
 
-export const sets:Map<string, Set> = new Map<string, Set>();
 export function setExists(code:string):boolean {
-    return sets.has(code)
+    return instance.existsSet(code);
 }
 
 export class Set extends Entity {
@@ -55,8 +54,7 @@ export class OfficialSet extends Set {
 
 export async function from(code:string):Promise<Set> {
     if (setExists(code)) { // Set found in list of existing sets; no web call needed
-        // fallback object will never be used, since setExsistsCustom is checked
-        return sets.get(code) ?? new Set("NUM");
+        return instance.loadSet(code);
     } else if (await setExistsOfficially(code)) { // See if official/custom; if official load from scryfall
         return (await loadSetFromScryfall(code)).persist();
     } else { // Set not official and not in local list; create new custom set

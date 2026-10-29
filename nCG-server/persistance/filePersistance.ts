@@ -30,6 +30,15 @@ if (!fs.existsSync(path)) {
     fs.mkdirSync(path);
 }
 export default class FilePersistance implements Persistance {
+    existsSet(code: string): boolean {
+        return(fs.existsSync(setsFilePath(code)));
+    }
+    existsCard(set: string | Set, cardNumber: string): boolean {
+        throw new Error("Method not implemented.");
+    }
+    existsDeck(deck: string): boolean {
+        throw new Error("Method not implemented.");
+    }
 
     storeSet(code: string, set: Set): Set {
         set.id = code;

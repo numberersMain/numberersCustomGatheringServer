@@ -10,12 +10,14 @@ export default interface Persistance {
     storeSet(code:string, set:Set):Set;
     loadSet(set:string):Set;
     listSets():Set[];
+    existsSet(code:string):boolean;
 
     storeCard(set:string|Set, cardNumber:string, card:Card):Card;
     loadCard(set:string|Set, cardNumber:string):Card;
     listCardsInSet(set:string|Set):Card[];
     addCardToSet(set:string|Set, card:string|Card):Set;
     deleteSetCard(set:string|Set, card:string|Card):Set;
+    existsCard(set:string|Set, cardNumber:string):boolean;
 
     storeDeck(deck:Deck):Deck;
     loadDeck(id:string):Deck;
@@ -23,6 +25,7 @@ export default interface Persistance {
     listCardsInDeck(deck:string|Deck):Card[];
     addCardToDeck(deck:string|Deck, card:string|Card):Deck;
     deleteDeckCard(deck:string|Deck, card:string|Card):Deck;
+    existsDeck(deck:string):boolean;
 
     storeGameState(gameState:GameState):GameState;
     loadGameState(id:string):GameState;
