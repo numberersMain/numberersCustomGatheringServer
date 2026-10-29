@@ -6,6 +6,12 @@ export function setExists(code:string):boolean {
     return instance.existsSet(code);
 }
 
+type icontype = "svg" | "png" | "mse-symbol" | undefined
+export class SetIcon {
+  data:string = "";
+  type:icontype;
+}
+
 export class Set extends Entity {
   /**
    * english set name, like "Dragons of Tarkir"
@@ -20,6 +26,11 @@ export class Set extends Entity {
     super(id);
     this.code = code;
   }
+
+  icon: SetIcon = {
+    data: "",
+    type: undefined
+  };
 
   persist() {
     return instance.storeSet(this.code, this);

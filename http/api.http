@@ -6,7 +6,7 @@ GET http://localhost:3000/set/SOM
 Accept: application/json;
 
 ### Get set
-GET http://localhost:3000/set/DTK
+GET http://localhost:3000/set/RNA
 Accept: application/json;
 
 ### Get set

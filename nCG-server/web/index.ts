@@ -39,6 +39,10 @@ export async function loadSetFromScryfall(code:string):Promise<OfficialSet> {
         set.scryfallUri = response.data.scryfall_uri;
         set.searchUri = response.data.search_uri;
         set.uri = response.data.uri;
+        set.icon = {
+            data: (await axios.get(response.data.icon_svg_uri)).data,
+            type: "svg"
+        }
     } catch (error) {
         console.log('Unexpected error ', error); // even a 404 will land here
     }
