@@ -1,5 +1,5 @@
 import { instance } from "../persistance/persistance.ts";
-import { cardExistsOfficially, loadCardFromScryfall } from "../web/index.ts";
+import { cardExistsOfficially, loadCardFromScryfall, searchCardOnScryfall } from "../web/index.ts";
 import { Entity } from "./entity.ts";
 
 export function cardExists(set:string, cardNumber:string):boolean {
@@ -58,4 +58,20 @@ export async function from(set:string, cardNumber:string):Promise<Card> {
     } else { // Set not official and not in local list; create new custom set
         return (new Card(set, cardNumber)).persist();
     }
+}
+
+export async function searchBySetAndName(set:string, cardName:string):Promise<Card> {
+    return (await searchCardOnScryfall(set, cardName)).persist();
+}
+
+export async function searchByTappedOutLine(toDeckListLine:string):Promise<Card> {
+    const params:string[] | undefined = toDeckListLine.split("x ", 2)[1]?.split(" (");
+    if (params != undefined) {
+        const name:string | undefined = params[0];
+        const set:string | undefined = params[1]?.split(")")[0];
+        if (name != undefined && set != undefined) {
+            return await searchBySetAndName(set, name);
+        }
+    }
+    throw new Error("Invalid format!");
 }

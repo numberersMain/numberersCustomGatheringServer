@@ -1,6 +1,6 @@
 import express, { type Express, type Request, type Response } from 'express';
 import { from as setFrom } from './types/set.ts';
-import { from as cardFrom } from './types/card.ts';
+import { from as cardFrom, searchByTappedOutLine } from './types/card.ts';
 import type Persistance from './persistance/persistance.ts';
 import FilePersistance from './persistance/filePersistance.ts';
 import { instance } from './persistance/persistance.ts';
@@ -25,6 +25,11 @@ app.get('/card/:set/:cardNumber', async (req: Request<{set:string, cardNumber:st
     const set:string = req.params.set;
     const cardNumber:string = req.params.cardNumber;
   res.json(await cardFrom(set, cardNumber));
+});
+
+app.get('/to/card/:tol', async (req: Request<{tol:string}>, res: Response) => {
+    const tol:string = req.params.tol;
+  res.json(await searchByTappedOutLine(tol));
 });
 
 app.listen(3000);

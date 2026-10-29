@@ -24,3 +24,7 @@ Accept: application/json;
 ### Get card
 GET http://localhost:3000/card/RNA/3
 Accept: application/json;
+
+### Get card
+GET http://localhost:3000/to/card/1x Maralen, Fae Ascendant (ECL) *CMDR*
+Accept: application/json;
