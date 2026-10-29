@@ -1,7 +1,7 @@
+import type { Card } from "../types/card.ts";
 import { Set } from "../types/set.ts";
 import FilePersistance from "./filePersistance.ts";
 
-type Card = {}; // implement in types
 type Deck = {}; // implement in types
 type GameState = {}; // implement in types
 type User = {}; // implement in types
@@ -15,16 +15,16 @@ export default interface Persistance {
     storeCard(set:string|Set, cardNumber:string, card:Card):Card;
     loadCard(set:string|Set, cardNumber:string):Card;
     listCardsInSet(set:string|Set):Card[];
-    addCardToSet(set:string|Set, card:string|Card):Set;
-    deleteSetCard(set:string|Set, card:string|Card):Set;
+    addCardToSet(set:string|Set, card:Card):Set;
+    deleteSetCard(set:string|Set, card:Card):Set;
     existsCard(set:string|Set, cardNumber:string):boolean;
 
     storeDeck(deck:Deck):Deck;
     loadDeck(id:string):Deck;
     listDecks():Deck[];
     listCardsInDeck(deck:string|Deck):Card[];
-    addCardToDeck(deck:string|Deck, card:string|Card):Deck;
-    deleteDeckCard(deck:string|Deck, card:string|Card):Deck;
+    addCardToDeck(deck:string|Deck, card:Card):Deck;
+    deleteDeckCard(deck:string|Deck, card:Card):Deck;
     existsDeck(deck:string):boolean;
 
     storeGameState(gameState:GameState):GameState;

@@ -5,3 +5,11 @@ Accept: application/json;q=0.9,*/*;q=0.8
 ### Get njonexisting set
 GET https://api.scryfall.com/sets/BTK
 Accept: application/json;q=0.9,*/*;q=0.8
+
+
+### Get existing set
+GET https://api.scryfall.com/cards/DTK/100
+Accept: application/json;q=0.9,*/*;q=0.8
+
+### image
+GET https://cards.scryfall.io/large/front/a/2/a2acae67-5238-40bb-a173-6fc858264a6c.jpg?1783938598

@@ -6,10 +6,21 @@ GET http://localhost:3000/set/SOM
 Accept: application/json;
 
 ### Get set
-GET http://localhost:3000/set/KTK
+GET http://localhost:3000/set/DTK
 Accept: application/json;
 
 ### Get set
 GET http://localhost:3000/set/XXX
 Accept: application/json;
 
+### Get sets
+GET http://localhost:3000/set
+Accept: application/json;
+
+### Get card
+GET http://localhost:3000/card/SOM/102
+Accept: application/json;
+
+### Get card
+GET http://localhost:3000/card/RNA/3
+Accept: application/json;
