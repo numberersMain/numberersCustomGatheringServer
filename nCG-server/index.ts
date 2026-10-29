@@ -1,7 +1,11 @@
 import express, { type Express, type Request, type Response } from 'express';
 import { from as setFrom } from './types/set.ts';
+import type Persistance from './persistance/persistance.ts';
+import FilePersistance from './persistance/filePersistance.ts';
 
 const app: Express = express();
+
+const persistance:Persistance = new FilePersistance();
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');

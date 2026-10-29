@@ -1,3 +1,4 @@
+import { instance } from "../persistance/persistance.ts";
 import { loadSetFromScryfall, setExistsOfficially } from "../web/index.ts";
 import { Entity } from "./entity.ts";
 
@@ -22,8 +23,7 @@ export class Set extends Entity {
   }
 
   persist() {
-    sets.set(this.code, this);
-    return this;
+    return instance.storeSet(this.code, this);
   }
 }
 

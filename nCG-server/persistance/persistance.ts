@@ -1,4 +1,5 @@
-import { Set } from "../types/set";
+import { Set } from "../types/set.ts";
+import FilePersistance from "./filePersistance.ts";
 
 type Card = {}; // implement in types
 type Deck = {}; // implement in types
@@ -38,3 +39,5 @@ export default interface Persistance {
     deleteUserSet(user:string|User, set:string|Set):User;
     deleteUserDeck(user:string|User, deck:string|Deck):User;
 }
+
+export const instance:Persistance = new FilePersistance();

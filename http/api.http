@@ -2,6 +2,14 @@
 GET http://localhost:3000/
 
 ### Get set
+GET http://localhost:3000/set/SOM
+Accept: application/json;
+
+### Get set
+GET http://localhost:3000/set/KTK
+Accept: application/json;
+
+### Get set
 GET http://localhost:3000/set/XXX
 Accept: application/json;
 

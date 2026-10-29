@@ -1,5 +1,5 @@
 export class Entity {
-    id?: string;
+    id: string | undefined;
 
     constructor(id?:string) {
         this.id = id;
