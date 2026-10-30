@@ -18,13 +18,21 @@ GET http://localhost:3000/set
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/card/SOM/102
+GET http://localhost:3000/card/set/SOM/102
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/card/RNA/3
+GET http://localhost:3000/card/set/RNA/3
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/to/card/1x Maralen, Fae Ascendant (ECL) *CMDR*
+GET http://localhost:3000/card/to/1x Woodland Mystic
+Accept: application/json;
+
+### Get card
+GET http://localhost:3000/card/csv/main,1,"Maralen, Fae Ascendant",ECL,,,,,,True
+Accept: application/json;
+
+### Get card
+GET http://localhost:3000/card/csv/main,1,Leaf-Crowned Visionary,DMU,,,,,,
 Accept: application/json;

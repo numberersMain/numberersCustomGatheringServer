@@ -61,7 +61,11 @@ export async function from(set:string, cardNumber:string):Promise<Card> {
 }
 
 export async function searchBySetAndName(set:string, cardName:string):Promise<Card> {
-    return (await searchCardOnScryfall(set, cardName)).persist();
+    return (await searchCardOnScryfall(cardName, set)).persist();
+}
+
+export async function searchByName(cardName:string):Promise<Card> {
+    return (await searchCardOnScryfall(cardName)).persist();
 }
 
 export async function searchByTappedOutLine(toDeckListLine:string):Promise<Card> {
@@ -71,6 +75,25 @@ export async function searchByTappedOutLine(toDeckListLine:string):Promise<Card>
         const set:string | undefined = params[1]?.split(")")[0];
         if (name != undefined && set != undefined) {
             return await searchBySetAndName(set, name);
+        } else if (name != undefined) {
+            return await searchByName(name);
+        }
+    }
+    throw new Error("Invalid format!");
+}
+
+export async function searchByCSVLine(csvDeckListLine:string):Promise<Card> {
+    console.log(csvDeckListLine);
+    const regex = /("[^"]+"|[^,]+)*,/g;
+    const params:string[] | undefined = csvDeckListLine.split(regex);
+    console.log(params);
+    if (params != undefined) {
+        const name:string | undefined = params[5];
+        const set:string | undefined = params[7];
+        if (name != undefined && set != undefined) {
+            return await searchBySetAndName(set, name);
+        } else if (name != undefined) {
+            return await searchByName(name);
         }
     }
     throw new Error("Invalid format!");

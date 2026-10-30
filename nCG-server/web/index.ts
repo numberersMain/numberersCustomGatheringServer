@@ -51,11 +51,11 @@ export async function loadSetFromScryfall(code:string):Promise<OfficialSet> {
     return set;
 }
 
-export async function searchCardOnScryfall(set:string, cardName:string):Promise<OfficialCard> {
-    const searchPath:string = searchCardByNameAndSetSFPath + cardName + searchSetSuffix + set;
+export async function searchCardOnScryfall(cardName:string, set?:string):Promise<OfficialCard> {
+    const searchPath:string = searchCardByNameAndSetSFPath + cardName + ((set != undefined) ? searchSetSuffix + set : "");
     try {
         const response = await axios.get(searchPath);
-        const card:OfficialCard = new OfficialCard(set, response.data.collector_number);
+        const card:OfficialCard = new OfficialCard("temp", response.data.collector_number);
         card.artist = response.data.artist;
         card.artistIds = response.data.artist_ids;
         card.borderColor = response.data.border_color;
@@ -85,7 +85,7 @@ export async function searchCardOnScryfall(set:string, cardName:string):Promise<
         return card;
     } catch (error) {
         console.log('Unexpected error ', error); // even a 404 will land here
-        return new OfficialCard(set, "XXX");
+        return new OfficialCard("XXX", "XXX");
     }
 }
 
