@@ -51,7 +51,9 @@ export async function loadSetFromScryfall(code:string):Promise<OfficialSet> {
     return set;
 }
 
-export async function searchCardOnScryfall(cardName:string, set?:string):Promise<OfficialCard> {
+export async function searchCardOnScryfall(cardName:string, set?:string):Promise<Card> {
+    if (set == "Y23")
+        set = "ydmu"
     const searchPath:string = searchCardByNameAndSetSFPath + encodeURI(cardName) + ((set != undefined) ? searchSetSuffix + encodeURI(set) : "");
     try {
         const response = await axios.get(searchPath);
@@ -65,7 +67,7 @@ export async function searchCardOnScryfall(cardName:string, set?:string):Promise
         card.defense = response.data.defense;
         card.flavorName = response.data.flavor_name;
         card.flavorText = response.data.flavor_text;
-        card.image = (await axios.get(response.data.image_uris.large)).data;
+        card.image = (await axios.get(response.data.image_uris.large ?? response.data.image_uris.png ?? response.data.image_uris.normal)).data;
         card.manaCost = response.data.mana_cost;
         card.manaValue = response.data.cmc;
         card.multiverseIds = response.data.multiverse_ids;
