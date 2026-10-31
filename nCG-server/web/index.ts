@@ -52,7 +52,7 @@ export async function loadSetFromScryfall(code:string):Promise<OfficialSet> {
 }
 
 export async function searchCardOnScryfall(cardName:string, set?:string):Promise<OfficialCard> {
-    const searchPath:string = searchCardByNameAndSetSFPath + cardName + ((set != undefined) ? searchSetSuffix + set : "");
+    const searchPath:string = searchCardByNameAndSetSFPath + encodeURI(cardName) + ((set != undefined) ? searchSetSuffix + encodeURI(set) : "");
     try {
         const response = await axios.get(searchPath);
         const card:OfficialCard = new OfficialCard("temp", response.data.collector_number);
@@ -60,8 +60,8 @@ export async function searchCardOnScryfall(cardName:string, set?:string):Promise
         card.artistIds = response.data.artist_ids;
         card.borderColor = response.data.border_color;
         card.cardNumber = response.data.collector_number;
-        card.colorIdentity = response.data.color_identity.join();
-        card.colors = response.data.colors.join();
+        card.colorIdentity = response.data.color_identity.join() ? response.data.color_identity.join() : [];
+        card.colors = response.data.colors ? response.data.colors.join() : [];
         card.defense = response.data.defense;
         card.flavorName = response.data.flavor_name;
         card.flavorText = response.data.flavor_text;
@@ -84,7 +84,9 @@ export async function searchCardOnScryfall(cardName:string, set?:string):Promise
         card.uri = response.data.uri;
         return card;
     } catch (error) {
-        console.log('Unexpected error ', error); // even a 404 will land here
+        console.log('Unexpected error '); // even a 404 will land here
+        console.log([cardName, set, searchPath].join()); // even a 404 will land here
+        console.log(error); // even a 404 will land here
         return new OfficialCard("XXX", "XXX");
     }
 }

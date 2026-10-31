@@ -65,7 +65,7 @@ app.post('/deck/import/csv/:name', async (req: Request<{name:string}>, res: Resp
     const commanders:Card[] = [];
     const csvLines:string[] = csv.split("\n");
     for (var csvLine of csvLines) {
-      if (csvLine.length != 0 && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language,Commander") {
+      if (csvLine.length != 0 && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language,Commander\r") {
         const result = await searchByCSVLine(csvLine);
         switch (result.zone) {
           case "cmdr": {

@@ -20,8 +20,4 @@ export class Deck extends Entity {
     super(id);
     this.name = name;
   }
-
-  persist() {
-    return instance.storeDeck(this);
-  }
 }

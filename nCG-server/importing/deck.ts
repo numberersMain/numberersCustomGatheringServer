@@ -4,7 +4,7 @@ import { Deck } from "../types/deck.ts";
 
 
 export async function importDeck(name: string, mainboard: Card[], sideboard: Card[], commanders: Card[], companions: Card[]): Promise<Deck> {
-  const deck = ((instance.existsDeck(name)) ? instance.loadDeck(name) : new Deck(name));
+  const deck = instance.storeDeck((instance.existsDeck(name)) ? instance.loadDeck(name) : new Deck(name));
   for (const card of mainboard) {
     instance.addCardToDeck(deck, card, "main");
   }
