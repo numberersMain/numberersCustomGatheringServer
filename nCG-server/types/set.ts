@@ -1,5 +1,4 @@
 import { instance } from "../persistance/persistance.ts";
-import { loadSetFromScryfall, setExistsOfficially } from "../web/index.ts";
 import { Entity } from "./entity.ts";
 
 export function setExists(code:string):boolean {
@@ -61,14 +60,4 @@ export class OfficialSet extends Set {
   searchUri: string = "NOT LOADED YET";
   cardCount: number = -1;
   printSize: number = -1;
-}
-
-export async function from(code:string):Promise<Set> {
-    if (setExists(code)) { // Set found in list of existing sets; no web call needed
-        return instance.loadSet(code);
-    } else if (await setExistsOfficially(code)) { // See if official/custom; if official load from scryfall
-        return (await loadSetFromScryfall(code)).persist();
-    } else { // Set not official and not in local list; create new custom set
-        return (new CustomSet(code)).persist();
-    }
 }

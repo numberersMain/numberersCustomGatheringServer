@@ -1,10 +1,10 @@
 import { Hash } from "crypto";
-import { Set } from "../types/set.ts";
+import { CustomSet, Set } from "../types/set.ts";
 import type Persistance from "./persistance.ts";
 import * as fs from 'fs';
-import type { Card } from "../types/card.ts";
+import type { Card, CardIdentity } from "../types/card.ts";
+import { Deck, type DeckZone } from "../types/deck.ts";
 
-type Deck = {}; // implement in types
 type GameState = {}; // implement in types
 type User = {}; // implement in types
 
@@ -21,7 +21,7 @@ const gameStatesSuffix:string = ".json";
 const usersSuffix:string = ".json";
 const setsFilePath = (set:string) => setsPath + set + setsSuffix;
 const cardsFilePath = (set:string, card:string) => cardsPath + set + ":" + card + cardsSuffix;
-const decksFilePath = (deck:string) => decksPath + Date.now() + decksSuffix;
+const decksFilePath = (deck:string) => decksPath + deck + decksSuffix;
 const gameStatesFilePath = (gs:string) => gameStatesPath + Date.now() + gameStatesSuffix;
 const usersFilePath = (user:string) => usersPath + Date.now() + usersSuffix;
 
@@ -43,12 +43,12 @@ export default class FilePersistance implements Persistance {
         return(fs.existsSync(cardsFilePath(setCode, cardNumber)));
     }
     existsDeck(deck: string): boolean {
-        throw new Error("Method not implemented.");
+        return(fs.existsSync(decksFilePath(deck)));
     }
 
     storeSet(code: string, set: Set): Set {
         set.id = code;
-        const content:string = JSON.stringify(set);
+        const content:string = JSON.stringify(set, null, 4);
         if (!fs.existsSync(setsPath)) {
             fs.mkdirSync(setsPath);
         }
@@ -74,7 +74,7 @@ export default class FilePersistance implements Persistance {
     }
     storeCard(set: string | Set, cardNumber: string, card: Card): Card {
         card.id = card.set + "/" + cardNumber;
-        const content:string = JSON.stringify(card);
+        const content:string = JSON.stringify(card, null, 4);
         if (!fs.existsSync(cardsPath)) {
             fs.mkdirSync(cardsPath);
         }
@@ -93,31 +93,127 @@ export default class FilePersistance implements Persistance {
         const cardObject:Card = JSON.parse(content);
         return cardObject;
     }
-    listCardsInSet(set: string | Set): Card[] {
-        throw new Error("Method not implemented.");
+    listCardsInSet(set: string | Set, zone?:DeckZone): Card[] {
+        var setCode:string;
+        if (set instanceof Set) {
+            setCode = set.code;
+        } else {
+            setCode = set;
+        }
+        const files:string[] = fs.readdirSync(cardsPath);
+        const cards:Card[] = [];
+        for (const cardFileName of files) {
+            const cardFilePath:string = cardsFilePath + cardFileName;
+            const content:string = fs.readFileSync(cardFilePath).toString();
+            const cardObject:Card = JSON.parse(content);
+            if (cardObject.set == setCode)
+                cards.push(cardObject);
+        }
+        return cards;
     }
-    addCardToSet(set: string | Set, card: Card): Set {
-        throw new Error("Method not implemented.");
+    addCardToSet(set: string | CustomSet, cardNumber: string, card: Card): Set {
+        var setCode:string;
+        if (set instanceof Set) {
+            setCode = set.code;
+        } else {
+            setCode = set;
+        }
+        const newCard:Card = structuredClone(card);
+        newCard.set = setCode;
+        newCard.cardNumber = cardNumber;
+        newCard.id = setCode + "/" + cardNumber;
+        this.storeCard(setCode, cardNumber, newCard);
+        return this.loadSet(setCode);
     }
     deleteSetCard(set: string | Set, card: Card): Set {
         throw new Error("Method not implemented.");
     }
-    storeDeck(deck: {}): {} {
-        throw new Error("Method not implemented.");
+    storeDeck(deck: Deck): Deck {
+        deck.id = deck.name;
+        const content:string = JSON.stringify(deck, null, 4);
+        if (!fs.existsSync(decksPath)) {
+            fs.mkdirSync(decksPath);
+        }
+        fs.writeFileSync(decksFilePath(deck.name), content);
+        return deck;
     }
-    loadDeck(id: string): {} {
-        throw new Error("Method not implemented.");
+    loadDeck(id: string): Deck {
+        const deckFilePath:string = decksFilePath(id);
+        const content:string = fs.readFileSync(deckFilePath).toString();
+        const deckObject:Deck = JSON.parse(content);
+        return deckObject;
     }
-    listDecks(): {}[] {
-        throw new Error("Method not implemented.");
+    listDecks(): Deck[] {
+        const files:string[] = fs.readdirSync(decksPath);
+        const decks:Deck[] = [];
+        for (const deckFileName of files) {
+            const deckFilePath:string = decksPath + deckFileName;
+            const content:string = fs.readFileSync(deckFilePath).toString();
+            const deckObject:Deck = JSON.parse(content);
+            decks.push(deckObject);
+        }
+        return decks;
     }
-    listCardsInDeck(deck: string | {}): Card[] {
-        throw new Error("Method not implemented.");
+    listCardsInDeck(deck: string | Deck, zone?:DeckZone): Card[] {
+        if (deck instanceof Deck) {
+            deck = deck;
+        } else {
+            deck = this.loadDeck(deck);
+        }
+        const files:string[] = fs.readdirSync(decksPath);
+        const cards:Card[] = [];
+        var cardIdentities:CardIdentity[];
+        if (zone) {
+            switch (zone) {
+                case ("cmdr"): {
+                    cardIdentities = deck.commanders;
+                    break;
+                }
+                case ("cmp"): {
+                    cardIdentities = deck.companions;
+                    break;
+                }
+                case ("main"): {
+                    cardIdentities = deck.mainboard;
+                    break;
+                }
+                case ("side"): {
+                    cardIdentities = deck.sideboard;
+                    break;
+                }
+            }
+        } else {
+            cardIdentities = new Array().concat(deck.commanders, deck.companions, deck.mainboard, deck.sideboard);
+        }
+        for (const cardIdentity of cardIdentities) {
+            const card = this.loadCard(cardIdentity.set, cardIdentity.cardNumber);
+            cards.push(card);
+        }
+        return cards;
     }
-    addCardToDeck(deck: string | {}, card: Card): {} {
-        throw new Error("Method not implemented.");
+    addCardToDeck(deck: string | Deck, card: Card, zone:DeckZone): Deck {
+        if (!(deck instanceof Deck))
+            deck = this.loadDeck(deck);
+        switch (zone) {
+            case "cmdr": {
+                deck.commanders.push(card);
+                break;
+            }
+            case "cmp": {
+                deck.companions.push(card);
+                break;
+            }
+            case "main": {
+                deck.mainboard.push(card);
+                break;
+            }
+            case "side": {
+                deck.sideboard.push(card);
+            }
+        }
+        return this.storeDeck(deck);
     }
-    deleteDeckCard(deck: string | {}, card: Card): {} {
+    deleteDeckCard(deck: string | Deck, card: Card, zone:DeckZone): Deck {
         throw new Error("Method not implemented.");
     }
     storeGameState(gameState: {}): {} {
@@ -141,13 +237,13 @@ export default class FilePersistance implements Persistance {
     storeUserSet(set: string | Set, user: string | {}): { user: {}; set: Set; } {
         throw new Error("Method not implemented.");
     }
-    storeUserDeck(deck: string | {}, user: string | {}): { user: {}; deck: {}; } {
+    storeUserDeck(deck: string | Deck, user: string | {}): { user: {}; deck: Deck; } {
         throw new Error("Method not implemented.");
     }
     listUserSets(user: string | {}): Set[] {
         throw new Error("Method not implemented.");
     }
-    listUserDecks(user: string | {}): {}[] {
+    listUserDecks(user: string | User): Deck[] {
         throw new Error("Method not implemented.");
     }
     listCardsInUserSets(user: string | {}): Card[] {
@@ -156,7 +252,7 @@ export default class FilePersistance implements Persistance {
     deleteUserSet(user: string | {}, set: string | Set): {} {
         throw new Error("Method not implemented.");
     }
-    deleteUserDeck(user: string | {}, deck: string | {}): {} {
+    deleteUserDeck(user: string | {}, deck: string | Deck): {} {
         throw new Error("Method not implemented.");
     }
     

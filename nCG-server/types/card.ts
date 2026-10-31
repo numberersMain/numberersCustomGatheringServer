@@ -1,12 +1,16 @@
 import { instance } from "../persistance/persistance.ts";
-import { cardExistsOfficially, loadCardFromScryfall, searchCardOnScryfall } from "../web/index.ts";
 import { Entity } from "./entity.ts";
 
 export function cardExists(set:string, cardNumber:string):boolean {
     return instance.existsCard(set, cardNumber);
 }
 
-export class Card extends Entity {
+export interface CardIdentity {
+    set:string;
+    cardNumber:string;
+}
+
+export class Card extends Entity implements CardIdentity {
     set:string;
     cardNumber:string; // collector number
     name:string = "NOT FILLED YET";
@@ -48,53 +52,4 @@ export class OfficialCard extends Card  {
   uri:string = "NOT LOADED YET";
   artistIds:string[] = ["NOT LOADED YET"];
 
-}
-
-export async function from(set:string, cardNumber:string):Promise<Card> {
-    if (cardExists(set, cardNumber)) { // Set found in list of existing sets; no web call needed
-        return instance.loadCard(set, cardNumber);
-    } else if (await cardExistsOfficially(set, cardNumber)) { // See if official/custom; if official load from scryfall
-        return (await loadCardFromScryfall(set, cardNumber)).persist();
-    } else { // Set not official and not in local list; create new custom set
-        return (new Card(set, cardNumber)).persist();
-    }
-}
-
-export async function searchBySetAndName(set:string, cardName:string):Promise<Card> {
-    return (await searchCardOnScryfall(cardName, set)).persist();
-}
-
-export async function searchByName(cardName:string):Promise<Card> {
-    return (await searchCardOnScryfall(cardName)).persist();
-}
-
-export async function searchByTappedOutLine(toDeckListLine:string):Promise<Card> {
-    const params:string[] | undefined = toDeckListLine.split("x ", 2)[1]?.split(" (");
-    if (params != undefined) {
-        const name:string | undefined = params[0];
-        const set:string | undefined = params[1]?.split(")")[0];
-        if (name != undefined && set != undefined) {
-            return await searchBySetAndName(set, name);
-        } else if (name != undefined) {
-            return await searchByName(name);
-        }
-    }
-    throw new Error("Invalid format!");
-}
-
-export async function searchByCSVLine(csvDeckListLine:string):Promise<Card> {
-    console.log(csvDeckListLine);
-    const regex = /("[^"]+"|[^,]+)*,/g;
-    const params:string[] | undefined = csvDeckListLine.split(regex);
-    console.log(params);
-    if (params != undefined) {
-        const name:string | undefined = params[5];
-        const set:string | undefined = params[7];
-        if (name != undefined && set != undefined) {
-            return await searchBySetAndName(set, name);
-        } else if (name != undefined) {
-            return await searchByName(name);
-        }
-    }
-    throw new Error("Invalid format!");
 }
