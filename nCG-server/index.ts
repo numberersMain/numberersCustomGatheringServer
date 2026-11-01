@@ -1,6 +1,6 @@
 import express, { type Express, type Request, type Response } from 'express';
 import { setFrom as setFrom } from "./importing/set.ts";
-import { Card } from './types/card.ts';
+import { Card, type CardIdentity, type CardIdentityWithAmount } from './types/card.ts';
 import { cardFrom } from "./importing/card.ts";
 import { searchByCSVLine } from "./importing/tappedOut.ts";
 import { searchByTappedOutLine } from "./importing/tappedOut.ts";
@@ -45,11 +45,11 @@ app.get('/card/csv/:csv', async (req: Request<{csv:string}>, res: Response) => {
 
 app.post('/cards/import/csv', async (req: Request, res: Response) => {
   const csv:string = req.body;
-    const cards:Card[] = [];
+    const cards:CardIdentity[] = [];
     const csvLines:string[] = csv.split("\n");
     for (var csvLine of csvLines) {
       if (csvLine.length != 0 && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language,Commander") {
-        cards.push((await searchByCSVLine(csvLine)).card);
+        cards.push((await searchByCSVLine(csvLine)).card.card);
         await new Promise(resolve => setTimeout(resolve, 500));
       }
     }
@@ -60,12 +60,16 @@ app.post('/deck/import/csv/:name', async (req: Request<{name:string}>, res: Resp
   const csv:string = req.body;
   console.log(csv);
   console.log(req);
-    const mainboard:Card[] = [];
-    const sideboard:Card[] = [];
-    const commanders:Card[] = [];
+    const mainboard:CardIdentityWithAmount[] = [];
+    const sideboard:CardIdentityWithAmount[] = [];
+    const commanders:CardIdentityWithAmount[] = [];
     const csvLines:string[] = csv.split("\n");
     for (var csvLine of csvLines) {
-      if (csvLine.length != 0 && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language,Commander\r") {
+      if (
+        csvLine.length != 0
+        && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language,Commander\r"
+        && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language\r"
+      ) {
         const result = await searchByCSVLine(csvLine);
         switch (result.zone) {
           case "cmdr": {

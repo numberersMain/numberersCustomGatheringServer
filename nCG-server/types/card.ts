@@ -10,6 +10,11 @@ export interface CardIdentity {
     cardNumber:string;
 }
 
+export interface CardIdentityWithAmount {
+    card:CardIdentity;
+    amount:number;
+}
+
 export class Card extends Entity implements CardIdentity {
     set:string;
     cardNumber:string; // collector number
@@ -38,6 +43,13 @@ export class Card extends Entity implements CardIdentity {
 
   persist() {
     return instance.storeCard(this.set, this.cardNumber, this);
+  }
+
+  deepReducedCopyCard():CardIdentity {
+    return {
+        cardNumber: this.cardNumber,
+        set: this.set
+    }
   }
 }
 

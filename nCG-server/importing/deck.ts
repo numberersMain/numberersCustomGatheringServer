@@ -1,21 +1,27 @@
 import { instance } from "../persistance/persistance.ts";
-import type { Card } from "../types/card.ts";
+import type { Card, CardIdentityWithAmount } from "../types/card.ts";
 import { Deck } from "../types/deck.ts";
 
 
-export async function importDeck(name: string, mainboard: Card[], sideboard: Card[], commanders: Card[], companions: Card[]): Promise<Deck> {
+export async function importDeck(
+  name: string,
+  mainboard: CardIdentityWithAmount[],
+  sideboard: CardIdentityWithAmount[],
+  commanders: CardIdentityWithAmount[],
+  companions: CardIdentityWithAmount[]
+): Promise<Deck> {
   const deck = instance.storeDeck((instance.existsDeck(name)) ? instance.loadDeck(name) : new Deck(name));
-  for (const card of mainboard) {
-    instance.addCardToDeck(deck, card, "main");
+  for (const cardWA of mainboard) {
+    instance.addCardToDeck(deck, cardWA, "main");
   }
-  for (const card of sideboard) {
-    instance.addCardToDeck(deck, card, "side");
+  for (const cardWA of sideboard) {
+    instance.addCardToDeck(deck, cardWA, "side");
   }
-  for (const card of commanders) {
-    instance.addCardToDeck(deck, card, "cmdr");
+  for (const cardWA of commanders) {
+    instance.addCardToDeck(deck, cardWA, "cmdr");
   }
-  for (const card of companions) {
-    instance.addCardToDeck(deck, card, "cmp");
+  for (const cardWA of companions) {
+    instance.addCardToDeck(deck, cardWA, "cmp");
   }
   return deck;
 }

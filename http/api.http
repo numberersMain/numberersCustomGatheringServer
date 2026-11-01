@@ -50,3 +50,10 @@ Accept: application/json;
 Content-Type: text/csv;
 
 < ./elves.csv
+
+### Get cards
+POST http://localhost:3000/deck/import/csv/Prolif3rate
+Accept: application/json;
+Content-Type: text/csv;
+
+< ./prolif3rate.csv

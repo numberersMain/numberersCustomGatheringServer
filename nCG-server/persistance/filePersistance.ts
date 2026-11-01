@@ -2,7 +2,7 @@ import { Hash } from "crypto";
 import { CustomSet, Set } from "../types/set.ts";
 import type Persistance from "./persistance.ts";
 import * as fs from 'fs';
-import type { Card, CardIdentity } from "../types/card.ts";
+import { Card, type CardIdentity, type CardIdentityWithAmount } from "../types/card.ts";
 import { Deck, type DeckZone } from "../types/deck.ts";
 
 type GameState = {}; // implement in types
@@ -154,15 +154,15 @@ export default class FilePersistance implements Persistance {
         }
         return decks;
     }
-    listCardsInDeck(deck: string | Deck, zone?:DeckZone): Card[] {
+    listCardsInDeck(deck: string | Deck, zone?:DeckZone): CardIdentityWithAmount[] {
         if (deck instanceof Deck) {
             deck = deck;
         } else {
             deck = this.loadDeck(deck);
         }
         const files:string[] = fs.readdirSync(decksPath);
-        const cards:Card[] = [];
-        var cardIdentities:CardIdentity[];
+        const cards:CardIdentityWithAmount[] = [];
+        var cardIdentities:CardIdentityWithAmount[];
         if (zone) {
             switch (zone) {
                 case ("cmdr"): {
@@ -186,14 +186,20 @@ export default class FilePersistance implements Persistance {
             cardIdentities = new Array().concat(deck.commanders, deck.companions, deck.mainboard, deck.sideboard);
         }
         for (const cardIdentity of cardIdentities) {
-            const card = this.loadCard(cardIdentity.set, cardIdentity.cardNumber);
+            const card:CardIdentityWithAmount = {
+                card: this.loadCard(cardIdentity.card.set, cardIdentity.card.cardNumber),
+                amount: cardIdentity.amount
+            };
             cards.push(card);
         }
         return cards;
     }
-    addCardToDeck(deck: string | Deck, card: Card, zone:DeckZone): Deck {
+    addCardToDeck(deck: string | Deck, card: CardIdentityWithAmount, zone:DeckZone): Deck {
         if (!(deck instanceof Deck))
             deck = this.loadDeck(deck);
+        if (card.card instanceof Card) {
+            card.card = card.card.deepReducedCopyCard();
+        }
         switch (zone) {
             case "cmdr": {
                 deck.commanders.push(card);
@@ -213,7 +219,7 @@ export default class FilePersistance implements Persistance {
         }
         return this.storeDeck(deck);
     }
-    deleteDeckCard(deck: string | Deck, card: Card, zone:DeckZone): Deck {
+    deleteDeckCard(deck: string | Deck, card: CardIdentityWithAmount, zone:DeckZone): Deck {
         throw new Error("Method not implemented.");
     }
     storeGameState(gameState: {}): {} {
