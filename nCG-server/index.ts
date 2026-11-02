@@ -8,12 +8,14 @@ import type Persistance from './persistance/persistance.ts';
 import FilePersistance from './persistance/filePersistance.ts';
 import { instance } from './persistance/persistance.ts';
 import { importDeck } from "./importing/deck.ts";
+import { loadImage } from './web/index.ts';
 
 const app: Express = express();
 
 const persistance:Persistance = new FilePersistance();
 
 app.use(express.text({type: "text/csv"}));
+app.use(express.raw({type: "image/png", limit: "400kb"}));
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
@@ -58,8 +60,6 @@ app.post('/cards/import/csv', async (req: Request, res: Response) => {
 
 app.post('/deck/import/csv/:name', async (req: Request<{name:string}>, res: Response) => {
   const csv:string = req.body;
-  console.log(csv);
-  console.log(req);
     const mainboard:CardIdentityWithAmount[] = [];
     const sideboard:CardIdentityWithAmount[] = [];
     const commanders:CardIdentityWithAmount[] = [];
@@ -89,6 +89,28 @@ app.post('/deck/import/csv/:name', async (req: Request<{name:string}>, res: Resp
       }
     }
   res.json(importDeck(req.params.name, mainboard, sideboard, commanders, []));
+});
+
+app.get('/deck/id/:id', async (req: Request<{id:string}>, res: Response) => {
+    const id:string = req.params.id;
+    if (instance.existsDeck(id))
+      res.json(instance.loadDeck(id));
+    else {
+      res.status(404);
+      res.send("Deck not found");
+    }
+});
+app.get('/deck', async (req: Request, res: Response) => {
+  res.json(instance.listDecks());
+});
+
+app.get('/card/set/:set/:cardNumber/image', async (req: Request<{set:string, cardNumber:string}>, res: Response) => {
+  res.type("image/png");
+  res.send((await instance.loadImage(req.params.set, req.params.cardNumber)));
+});
+app.post('/card/set/:set/:cardNumber/image', async (req: Request<{set:string, cardNumber:string}>, res: Response) => {
+  res.type("image/png");
+  res.send(instance.storeImage(req.params.set, req.params.cardNumber, req.body));
 });
 
 

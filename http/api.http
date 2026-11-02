@@ -37,6 +37,17 @@ Accept: application/json;
 GET http://localhost:3000/card/csv/main,1,Leaf-Crowned Visionary,DMU,,,,,,
 Accept: application/json;
 
+### Update image of card
+POST http://localhost:3000/card/set/SOM/102/image
+Accept: image/png;
+Content-Type: image/png
+
+< ./jerso.png
+
+### Get image of card
+GET http://localhost:3000/card/set/som/103/image
+Accept: image/png;
+
 ### Get cards
 POST http://localhost:3000/cards/import/csv
 Accept: application/json;
@@ -44,16 +55,31 @@ Content-Type: text/csv;
 
 < ./elves.csv
 
-### Get cards
+### Import deck
 POST http://localhost:3000/deck/import/csv/Elves In A Hot Tub
 Accept: application/json;
 Content-Type: text/csv;
 
 < ./elves.csv
 
-### Get cards
+### Import deck
 POST http://localhost:3000/deck/import/csv/Prolif3rate
 Accept: application/json;
 Content-Type: text/csv;
 
 < ./prolif3rate.csv
+
+### Get deck
+GET http://localhost:3000/deck/id/Prolif3rate
+Accept: application/json;
+Content-Type: text/csv;
+
+### Get nonexistant deck
+GET http://localhost:3000/deck/id/splurge
+Accept: application/json;
+Content-Type: text/csv;
+
+### List decks
+GET http://localhost:3000/deck
+Accept: application/json;
+Content-Type: text/csv;

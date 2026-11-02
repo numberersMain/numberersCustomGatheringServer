@@ -14,6 +14,8 @@ export default interface Persistance {
 
     storeCard(set:string|Set, cardNumber:string, card:Card):Card;
     loadCard(set:string|Set, cardNumber:string):Card;
+    loadImage(set:string, cardNumber:string):Promise<Buffer>;
+    storeImage(set:string, cardNumber:string, image:Buffer):Buffer;
     listCardsInSet(set:string|Set):Card[];
     addCardToSet(set:string|CustomSet, cardNumber:string, card:Card):Set;
     deleteSetCard(set:string|Set, card:Card):Set;

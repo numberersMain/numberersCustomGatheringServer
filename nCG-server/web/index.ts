@@ -30,6 +30,18 @@ export async function cardExistsOfficially(set:string, cardNumber:string):Promis
     return existsOfficially;
 }
 
+export async function loadImage(set:string, cardNumber:string):Promise<Buffer> {
+    const response = await axios.get(cardsSFPath + encodeURI(set) + "/" + encodeURI(cardNumber));
+    const imageResponse = await axios.get(
+        response.data.image_uris?.png
+        ?? "https://media.wizards.com/2023/images/daily/sleeve_weathered_cardback.png",
+        {
+            responseType: "arraybuffer"
+        }
+    );
+    return imageResponse.data;
+}
+
 export async function loadSetFromScryfall(code:string):Promise<OfficialSet> {
     const set:OfficialSet = new OfficialSet(code);
     try {
@@ -67,12 +79,6 @@ export async function searchCardOnScryfall(cardName:string, set?:string):Promise
         card.defense = response.data.defense;
         card.flavorName = response.data.flavor_name;
         card.flavorText = response.data.flavor_text;
-        card.image = (await axios.get(
-            response.data.image_uris?.large
-            ?? response.data.image_uris?.png
-            ?? response.data.image_uris?.normal
-            ?? "https://media.wizards.com/2023/images/daily/sleeve_weathered_cardback.png"
-        )).data;
         card.manaCost = response.data.mana_cost;
         card.manaValue = response.data.cmc;
         card.multiverseIds = response.data.multiverse_ids;
@@ -111,7 +117,6 @@ export async function loadCardFromScryfall(set:string, cardNumber:string):Promis
         card.defense = response.data.defense;
         card.flavorName = response.data.flavor_name;
         card.flavorText = response.data.flavor_text;
-        card.image = (await axios.get(response.data.image_uris.large)).data;
         card.manaCost = response.data.mana_cost;
         card.manaValue = response.data.cmc;
         card.multiverseIds = response.data.multiverse_ids;

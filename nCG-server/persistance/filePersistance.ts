@@ -4,6 +4,8 @@ import type Persistance from "./persistance.ts";
 import * as fs from 'fs';
 import { Card, type CardIdentity, type CardIdentityWithAmount } from "../types/card.ts";
 import { Deck, type DeckZone } from "../types/deck.ts";
+import axios, { type AxiosResponse } from "axios";
+import { loadImage } from "../web/index.ts";
 
 type GameState = {}; // implement in types
 type User = {}; // implement in types
@@ -11,16 +13,19 @@ type User = {}; // implement in types
 const path:string = "./content/";
 const setsPath:string = path + "sets/";
 const cardsPath:string = path + "cards/";
+const cardImagesPath:string = path + "images/cards/";
 const decksPath:string = path + "decks/";
 const gameStatesPath:string = path + "gs/";
 const usersPath:string = path + "users/";
 const setsSuffix:string = ".json";
 const cardsSuffix:string = ".json";
+const cardImagesSuffix:string = ".png";
 const decksSuffix:string = ".json";
 const gameStatesSuffix:string = ".json";
 const usersSuffix:string = ".json";
 const setsFilePath = (set:string) => setsPath + set + setsSuffix;
 const cardsFilePath = (set:string, card:string) => cardsPath + set + ":" + card + cardsSuffix;
+const cardImagesFilePath = (set:string, card:string) => cardImagesPath + set + ":" + card + cardImagesSuffix;
 const decksFilePath = (deck:string) => decksPath + deck + decksSuffix;
 const gameStatesFilePath = (gs:string) => gameStatesPath + Date.now() + gameStatesSuffix;
 const usersFilePath = (user:string) => usersPath + Date.now() + usersSuffix;
@@ -30,8 +35,30 @@ if (!fs.existsSync(path)) {
     fs.mkdirSync(path);
 }
 export default class FilePersistance implements Persistance {
+    storeImage(set: string, cardNumber: string, image: Buffer): Buffer {
+        if (!fs.existsSync(cardImagesPath)) {
+            fs.mkdirSync(cardImagesPath, {recursive: true});
+        }
+        const imagePath = cardImagesFilePath(set.toLowerCase(), cardNumber);
+        fs.writeFileSync(imagePath, image);
+        return image;
+    }
+    async loadImage(set: string, cardNumber: string): Promise<Buffer> {
+        if (!fs.existsSync(cardImagesPath)) {
+            fs.mkdirSync(cardImagesPath, {recursive: true});
+        }
+        const imagePath = cardImagesFilePath(set.toLowerCase(), cardNumber);
+        if (fs.existsSync(imagePath))
+            return(fs.readFileSync(imagePath))
+        else {
+            const image = await loadImage(set, cardNumber);
+            fs.writeFileSync(imagePath, image);
+            return image;
+        }
+    }
+
     existsSet(code: string): boolean {
-        return(fs.existsSync(setsFilePath(code)));
+        return(fs.existsSync(setsFilePath(code.toLowerCase())));
     }
     existsCard(set: string | Set, cardNumber: string): boolean {
         var setCode:string;
@@ -40,7 +67,7 @@ export default class FilePersistance implements Persistance {
         } else {
             setCode = set;
         }
-        return(fs.existsSync(cardsFilePath(setCode, cardNumber)));
+        return(fs.existsSync(cardsFilePath(setCode.toLowerCase(), cardNumber)));
     }
     existsDeck(deck: string): boolean {
         return(fs.existsSync(decksFilePath(deck)));
@@ -52,11 +79,11 @@ export default class FilePersistance implements Persistance {
         if (!fs.existsSync(setsPath)) {
             fs.mkdirSync(setsPath);
         }
-        fs.writeFileSync(setsFilePath(code), content);
+        fs.writeFileSync(setsFilePath(code.toLowerCase()), content);
         return set;
     }
     loadSet(set: string): Set {
-        const setFilePath:string = setsFilePath(set);
+        const setFilePath:string = setsFilePath(set.toLowerCase());
         const content:string = fs.readFileSync(setFilePath).toString();
         const setObject:Set = JSON.parse(content);
         return setObject;
@@ -73,12 +100,12 @@ export default class FilePersistance implements Persistance {
         return sets;
     }
     storeCard(set: string | Set, cardNumber: string, card: Card): Card {
-        card.id = card.set + "/" + cardNumber;
+        card.id = card.set.toLowerCase() + "/" + cardNumber;
         const content:string = JSON.stringify(card, null, 4);
         if (!fs.existsSync(cardsPath)) {
             fs.mkdirSync(cardsPath);
         }
-        fs.writeFileSync(cardsFilePath(card.set, cardNumber), content);
+        fs.writeFileSync(cardsFilePath(card.set.toLowerCase(), cardNumber), content);
         return card;
     }
     loadCard(set: string | Set, cardNumber: string): Card {
@@ -88,7 +115,7 @@ export default class FilePersistance implements Persistance {
         } else {
             setCode = set;
         }
-        const cardFilePath:string = cardsFilePath(setCode, cardNumber);
+        const cardFilePath:string = cardsFilePath(setCode.toLowerCase(), cardNumber);
         const content:string = fs.readFileSync(cardFilePath).toString();
         const cardObject:Card = JSON.parse(content);
         return cardObject;
@@ -106,7 +133,7 @@ export default class FilePersistance implements Persistance {
             const cardFilePath:string = cardsFilePath + cardFileName;
             const content:string = fs.readFileSync(cardFilePath).toString();
             const cardObject:Card = JSON.parse(content);
-            if (cardObject.set == setCode)
+            if (cardObject.set.toLowerCase() == setCode.toLowerCase())
                 cards.push(cardObject);
         }
         return cards;
@@ -119,11 +146,11 @@ export default class FilePersistance implements Persistance {
             setCode = set;
         }
         const newCard:Card = structuredClone(card);
-        newCard.set = setCode;
+        newCard.set = setCode.toLowerCase();
         newCard.cardNumber = cardNumber;
-        newCard.id = setCode + "/" + cardNumber;
-        this.storeCard(setCode, cardNumber, newCard);
-        return this.loadSet(setCode);
+        newCard.id = setCode.toLowerCase() + "/" + cardNumber;
+        this.storeCard(setCode.toLowerCase(), cardNumber, newCard);
+        return this.loadSet(setCode.toLowerCase());
     }
     deleteSetCard(set: string | Set, card: Card): Set {
         throw new Error("Method not implemented.");
@@ -195,7 +222,7 @@ export default class FilePersistance implements Persistance {
         return cards;
     }
     addCardToDeck(deck: string | Deck, card: CardIdentityWithAmount, zone:DeckZone): Deck {
-        if (!(deck instanceof Deck))
+        if (!(deck instanceof Object))
             deck = this.loadDeck(deck);
         if (card.card instanceof Card) {
             card.card = card.card.deepReducedCopyCard();

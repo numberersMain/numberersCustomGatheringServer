@@ -1,0 +1,5 @@
+
+app.get('/card/set/:set/:cardNumber/image', async (req: Request<{set:string, cardNumber:string}>, res: Response) => {
+  res.type('jpg');
+  res.send((await cardFrom(req.params.set, req.params.cardNumber)).image);
+});

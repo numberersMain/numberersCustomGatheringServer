@@ -30,7 +30,6 @@ export class Card extends Entity implements CardIdentity {
     toughness?:number;
     startingLoyalty?:number;
     defense?:number;
-    image?:string;
     artist?:string;
     borderColor:string = "NOT FILLED YET";
     flavorText?:string;
