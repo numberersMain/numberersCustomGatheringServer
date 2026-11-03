@@ -1,14 +1,16 @@
 import express, { type Express, type Request, type Response } from 'express';
-import { setFrom as setFrom } from "./importing/set.ts";
-import { Card, type CardIdentity, type CardIdentityWithAmount } from './types/card.ts';
+import { importSetFromMSE, setFrom as setFrom } from "./importing/set.ts";
+import { Card, type CardIdentity } from './types/card.ts';
 import { cardFrom } from "./importing/card.ts";
 import { searchByCSVLine } from "./importing/tappedOut.ts";
 import { searchByTappedOutLine } from "./importing/tappedOut.ts";
 import type Persistance from './persistance/persistance.ts';
 import FilePersistance from './persistance/filePersistance.ts';
 import { instance } from './persistance/persistance.ts';
-import { importDeck } from "./importing/deck.ts";
+import { importDeckFromCSV } from "./importing/deck.ts";
 import { loadImage } from './web/index.ts';
+import { MIMEType } from 'node:util';
+import { Gzip } from 'node:zlib';
 
 const app: Express = express();
 
@@ -16,6 +18,7 @@ const persistance:Persistance = new FilePersistance();
 
 app.use(express.text({type: "text/csv"}));
 app.use(express.raw({type: "image/png", limit: "400kb"}));
+app.use(express.raw({type: "application/zip", limit: "100mb"}));
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
@@ -60,35 +63,13 @@ app.post('/cards/import/csv', async (req: Request, res: Response) => {
 
 app.post('/deck/import/csv/:name', async (req: Request<{name:string}>, res: Response) => {
   const csv:string = req.body;
-    const mainboard:CardIdentityWithAmount[] = [];
-    const sideboard:CardIdentityWithAmount[] = [];
-    const commanders:CardIdentityWithAmount[] = [];
-    const csvLines:string[] = csv.split("\n");
-    for (var csvLine of csvLines) {
-      if (
-        csvLine.length != 0
-        && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language,Commander\r"
-        && csvLine != "Board,Qty,Name,Printing,Foil,Alter,Signed,Condition,Language\r"
-      ) {
-        const result = await searchByCSVLine(csvLine);
-        switch (result.zone) {
-          case "cmdr": {
-            commanders.push(result.card);
-            break;
-          }
-          case "main": {
-            mainboard.push(result.card);
-            break;
-          }
-          case "side": {
-            sideboard.push(result.card);
-            break;
-          }
-        }
-        await new Promise(resolve => setTimeout(resolve, 500));
-      }
-    }
-  res.json(importDeck(req.params.name, mainboard, sideboard, commanders, []));
+    const deck = await importDeckFromCSV(csv, req.params.name);
+  res.json(deck);
+});
+
+app.post('/set', async (req: Request, res: Response) => {
+  const set = await importSetFromMSE(req.body);
+  res.json(set);
 });
 
 app.get('/deck/id/:id', async (req: Request<{id:string}>, res: Response) => {
@@ -116,3 +97,5 @@ app.post('/card/set/:set/:cardNumber/image', async (req: Request<{set:string, ca
 
 
 app.listen(3000);
+
+

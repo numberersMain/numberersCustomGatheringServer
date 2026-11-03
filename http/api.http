@@ -17,6 +17,13 @@ Accept: application/json;
 GET http://localhost:3000/set
 Accept: application/json;
 
+### Post custom set
+POST http://localhost:3000/set
+Accept: application/json;
+Content-Type: application/zip
+
+< ./MSPaint Adventures.mse-set
+
 ### Get card
 GET http://localhost:3000/card/set/SOM/102
 Accept: application/json;
@@ -45,7 +52,7 @@ Content-Type: image/png
 < ./jerso.png
 
 ### Get image of card
-GET http://localhost:3000/card/set/som/103/image
+GET http://localhost:3000/card/set/afr/46/image
 Accept: image/png;
 
 ### Get cards
