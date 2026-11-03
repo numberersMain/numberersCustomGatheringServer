@@ -55,6 +55,10 @@ Accept: application/json;
 GET http://localhost:3000/card/csv/main,1,Leaf-Crowned Visionary,DMU,,,,,,
 Accept: application/json;
 
+### Get cards
+GET http://localhost:3000/card/set/RNA
+Accept: application/json;
+
 ### Update image of card
 POST http://localhost:3000/card/set/SOM/102/image
 Accept: image/png;

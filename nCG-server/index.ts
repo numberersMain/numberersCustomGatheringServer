@@ -38,15 +38,16 @@ app.get('/card/set/:set/:cardNumber', async (req: Request<{set:string, cardNumbe
     const cardNumber:string = req.params.cardNumber;
   res.json(await cardFrom(set, cardNumber));
 });
-
 app.get('/card/to/:tol', async (req: Request<{tol:string}>, res: Response) => {
     const tol:string = req.params.tol;
   res.json(await searchByTappedOutLine(tol));
 });
-
 app.get('/card/csv/:csv', async (req: Request<{csv:string}>, res: Response) => {
     const csv:string = req.params.csv;
   res.json(await searchByCSVLine(csv));
+});
+app.get('/card/set/:set', async (req: Request<{set:string}>, res: Response) => {
+  res.json(instance.listCardsInSet(req.params.set));
 });
 
 app.post('/cards/import/csv', async (req: Request, res: Response) => {

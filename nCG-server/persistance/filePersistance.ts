@@ -130,7 +130,7 @@ export default class FilePersistance implements Persistance {
         const files:string[] = fs.readdirSync(cardsPath);
         const cards:Card[] = [];
         for (const cardFileName of files) {
-            const cardFilePath:string = cardsFilePath + cardFileName;
+            const cardFilePath:string = cardsPath + cardFileName;
             const content:string = fs.readFileSync(cardFilePath).toString();
             const cardObject:Card = JSON.parse(content);
             if (cardObject.set.toLowerCase() == setCode.toLowerCase())
