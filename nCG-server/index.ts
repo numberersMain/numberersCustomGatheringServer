@@ -11,6 +11,8 @@ import { importDeckFromCSV } from "./importing/deck.ts";
 import { loadImage } from './web/index.ts';
 import { MIMEType } from 'node:util';
 import { Gzip } from 'node:zlib';
+import swaggerUi from 'swagger-ui-express';
+import swaggerJsdoc from 'swagger-jsdoc';
 
 const app: Express = express();
 
@@ -21,10 +23,47 @@ app.use(express.raw({type: "image/png", limit: "400kb"}));
 app.use(express.raw({type: "application/zip", limit: "100mb"}));
 app.use(express.text({type: "text/xml", limit: "100mb"}));
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsdoc({
+  failOnErrors: true, // Whether or not to throw when parsing errors. Defaults to false.
+  definition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'nCGServer Swagger UI',
+      version: '1.0.0',
+    },
+  },
+  apis: ['./index.ts', './nCG-server/index.ts']
+})));
+
+/**
+ * @openapi
+ * /:
+ *   get:
+ *     description: Hello World
+ *     responses:
+ *       200:
+ *         description: Returns hello world.
+ */
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
 });
 
+/**
+ * @openapi
+ * /set/{code}:
+ *   get:
+ *     description: Set
+ *     parameters:
+ *       - in: path
+ *         name: code
+ *         required: true
+ *         description: Set code.
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns set metadata
+ */
 app.get('/set/:code', async (req: Request<{code:string}>, res: Response) => {
     const code:string = req.params.code;
   res.json(await setFrom(code));
