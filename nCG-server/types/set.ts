@@ -30,10 +30,6 @@ export class Set extends Entity {
     data: "",
     type: undefined
   };
-
-  persist() {
-    return instance.storeSet(this.code, this);
-  }
 }
 
 /**

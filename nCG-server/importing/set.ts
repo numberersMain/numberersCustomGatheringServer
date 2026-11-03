@@ -9,9 +9,9 @@ export async function setFrom(code: string): Promise<Set> {
   if (setExists(code)) { // Set found in list of existing sets; no web call needed
     return instance.loadSet(code);
   } else if (await setExistsOfficially(code)) { // See if official/custom; if official load from scryfall
-    return (await loadSetFromScryfall(code)).persist();
+    return instance.storeSet(code, await loadSetFromScryfall(code));
   } else { // Set not official and not in local list; create new custom set
-    return (new CustomSet(code)).persist();
+    return instance.storeSet(code, new CustomSet(code));
   }
 }
 
@@ -49,7 +49,7 @@ export async function importSetFromMSE(content:Buffer):Promise<CustomSet> {
     type: 'mse-symbol'
   };
 
-  set.persist();
+  instance.storeSet(code, set);
   return set;
 }
 

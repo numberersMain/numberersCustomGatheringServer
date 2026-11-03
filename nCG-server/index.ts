@@ -1,7 +1,7 @@
 import express, { type Express, type Request, type Response } from 'express';
 import { importSetFromMSE, setFrom as setFrom } from "./importing/set.ts";
 import { Card, type CardIdentity } from './types/card.ts';
-import { cardFrom } from "./importing/card.ts";
+import { cardFrom, importCardsForCustomSet, importCardsForOfficialSet } from "./importing/card.ts";
 import { searchByCSVLine } from "./importing/tappedOut.ts";
 import { searchByTappedOutLine } from "./importing/tappedOut.ts";
 import type Persistance from './persistance/persistance.ts';
@@ -19,6 +19,7 @@ const persistance:Persistance = new FilePersistance();
 app.use(express.text({type: "text/csv"}));
 app.use(express.raw({type: "image/png", limit: "400kb"}));
 app.use(express.raw({type: "application/zip", limit: "100mb"}));
+app.use(express.text({type: "text/xml", limit: "100mb"}));
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
@@ -67,9 +68,17 @@ app.post('/deck/import/csv/:name', async (req: Request<{name:string}>, res: Resp
   res.json(deck);
 });
 
-app.post('/set', async (req: Request, res: Response) => {
+app.post('/set/mse', async (req: Request, res: Response) => {
   const set = await importSetFromMSE(req.body);
   res.json(set);
+});
+app.post('/set/mse/cards/:code', async (req: Request<{code:string}>, res: Response) => {
+  const cards = await importCardsForCustomSet(req.params.code, req.body);
+  res.json(cards);
+});
+app.post('/set/to/:code/cards', async (req: Request<{code:string}>, res: Response) => {
+  const cards = await importCardsForOfficialSet(req.params.code);
+  res.json(cards);
 });
 
 app.get('/deck/id/:id', async (req: Request<{id:string}>, res: Response) => {

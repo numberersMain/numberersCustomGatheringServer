@@ -1,0 +1,3647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spoiler set="MSPaint Adventures">
+<description></description>
+  <card>
+    <name>Kraken</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Creature</supertype>
+      <subtype>Kraken </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>8</power>
+      <toughness>8</toughness>
+    </stats>
+    <illustrator>cubewatermelon</illustrator>
+    <imagepath>Kraken.jpg</imagepath>
+    <number>0001</number>
+  </card>
+  <card>
+    <name>Bulky Underling</name>
+    <cost>4</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Giant Underling </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Reach</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BulkyUnderling.jpg</imagepath>
+    <number>0001</number>
+  </card>
+  <card>
+    <name>Cronus Ampora</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Rinnykrz</illustrator>
+    <imagepath>CronusAmpora.jpg</imagepath>
+    <number>0002</number>
+  </card>
+  <card>
+    <name>Troll Skeleton</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Creature</supertype>
+      <subtype>Troll Skeleton </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>mspandrew</illustrator>
+    <imagepath>TrollSkeleton.jpg</imagepath>
+    <number>0002</number>
+  </card>
+  <card>
+    <name>Gl’bgolyb</name>
+    <cost>5CC</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Eldrazi Lusus </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Lusus (When you cast Gl’bgolyb, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Gl’bgolyb.)
+Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>10</power>
+      <toughness>10</toughness>
+    </stats>
+    <illustrator>circlejourney</illustrator>
+    <imagepath>Glbgolyb.jpg</imagepath>
+    <number>0003</number>
+  </card>
+  <card>
+    <name>Underling</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Creature</supertype>
+      <subtype>Underling </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Menace</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Underling.jpg</imagepath>
+    <number>0003</number>
+  </card>
+  <card>
+    <name>Troll</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Haste</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>mspandrew</illustrator>
+    <imagepath>Troll.jpg</imagepath>
+    <number>0004</number>
+  </card>
+  <card>
+    <name>MSPA Reader</name>
+    <cost>4</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Human Avatar </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When MSPA Reader enters or attacks, remove or add a lore counter from target saga.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>MSPAReader.jpg</imagepath>
+    <number>0004</number>
+  </card>
+  <card>
+    <name>Troll</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Haste</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>alexabraixen</illustrator>
+    <imagepath>Troll.jpg</imagepath>
+    <number>0005</number>
+  </card>
+  <card>
+    <name>Null Session</name>
+    <cost>3C</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura Session </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Players cannot win the game. (Even when all other players have lost, the remaining player has to get rid of Null Session before they win the game)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>NullSession.jpg</imagepath>
+    <number>0005</number>
+  </card>
+  <card>
+    <name>Troll</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Haste</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>meowcatmutie</illustrator>
+    <imagepath>Troll.jpg</imagepath>
+    <number>0006</number>
+  </card>
+  <card>
+    <name>Void Session</name>
+    <cost>3CC</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura Session </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As long as Void Session is on the battlefield, cards and spells lose all colors, including cards not on the battlefield, and creatures and creature cards not on the battlefield lose all creature types.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>VoidSession.jpg</imagepath>
+    <number>0006</number>
+  </card>
+  <card>
+    <name>Spirit</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Creature</supertype>
+      <subtype>Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Flying</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>vintagegamebro</illustrator>
+    <imagepath>Spirit.jpg</imagepath>
+    <number>0007</number>
+  </card>
+  <card>
+    <name>Bedisa Pygora</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Soulbond (You may pair this creature with another unpaired creature when either enters. They remain paired for as long as you control both of them.)
+As long as Bedisa Pygora is bonded, both creatures get +0/+1.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BedisaPygora.jpg</imagepath>
+    <number>0007</number>
+  </card>
+  <card>
+    <name>Benevolent Cherub</name>
+    <cost>3WW</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Angel </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying, Lifelink
+Whenever another Angel dies, put two +1/+1 counters and a flying counter on target creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BenevolentCherub.jpg</imagepath>
+    <number>0008</number>
+  </card>
+  <card>
+    <name>Food</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Artifact</supertype>
+      <subtype>Food </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>2, T, Sacrifice this artifact: You gain 3 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Food.jpg</imagepath>
+    <number>0008</number>
+  </card>
+  <card>
+    <name>Robot</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Artifact Creature</supertype>
+      <subtype>Robot </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Flying</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Panicawa</illustrator>
+    <imagepath>Robot.jpg</imagepath>
+    <number>0009</number>
+  </card>
+  <card>
+    <name>Bro’s Strike</name>
+    <cost>4W</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Exile target creature, then proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BrosStrike.jpg</imagepath>
+    <number>0009</number>
+  </card>
+  <card>
+    <name>Treasure</name>
+    <cost></cost>
+    <type>
+      <supertype>Token Artifact</supertype>
+      <subtype>Treasure </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T, Sacrifice this artifact: Add one mana of any color.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Treasure.jpg</imagepath>
+    <number>0010</number>
+  </card>
+  <card>
+    <name>Calliope, Muse of Space</name>
+    <cost>3WW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Angel Avatar </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Whenever Calliope deals damage, gain twice that much life.
+If you would gain life, gain that much life plus 1 instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CalliopeMuseofSpace.jpg</imagepath>
+    <number>0010a</number>
+  </card>
+  <card>
+    <name>The Dolorosa</name>
+    <cost>WW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flash
+When The Dolorosa enters, return target creature you control to its owners hand. If that creature was legendary, put a lifelink counter on The Dolorosa.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheDolorosa.jpg</imagepath>
+    <number>0011</number>
+  </card>
+  <card>
+    <name>Heart and Light</name>
+    <cost>1WW</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Return target Avatar, Human, Troll, or Angel creature from the graveyard to the battlefield. Put two light counters on it. (If a permanent with a light counter would be dealt damage, remove that many light counters from it. Reduce the damage by the number of counters removed this way.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>HeartandLight.jpg</imagepath>
+    <number>0012</number>
+  </card>
+  <card>
+    <name>Justice Kick</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Target creature has prowess until end of turn. At the beginning of the next end step, that creature and another target creature fight. (Each deals damage equal to its power to the other.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>JusticeKick.jpg</imagepath>
+    <number>0013</number>
+  </card>
+  <card>
+    <name>Light Player</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Avatar Cleric </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Put a light counter on target creature. (If a permanent with a light counter would be dealt damage, remove that many light counters from it. Reduce the damage by the number of counters removed this way.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Grim-Kitkat</illustrator>
+    <imagepath>LightPlayer.jpg</imagepath>
+    <number>0014</number>
+  </card>
+  <card>
+    <name>Marsti Houtek</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Cleric </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Gain 2 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>MarstiHoutek.jpg</imagepath>
+    <number>0015</number>
+  </card>
+  <card>
+    <name>Mierfa Durgas</name>
+    <cost>1WW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>As long as Mierfa Durgas is equipped, they have first strike, reach, prowess, and get +1/+0.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>MierfaDurgas.jpg</imagepath>
+    <number>0016</number>
+  </card>
+  <card>
+    <name>Pounce de Leon</name>
+    <cost>3W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Cat Lusus </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Lusus (When you cast Pounce de Leon, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Pounce de Leon.)
+Lifelink</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>PouncedeLeon.jpg</imagepath>
+    <number>0017</number>
+  </card>
+  <card>
+    <name>Shooshpap</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Target creature can’t attack or block until your next turn.
+Gain 1 life.</rules>
+    <flavor>And with righteous pap and blessed shoosh he did quell his brother’s fury.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Shooshpap.jpg</imagepath>
+    <number>0018</number>
+  </card>
+  <card>
+    <name>The Signless</name>
+    <cost>WWW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Sacrifice The Signless: Creatures you control have indestructible and hexproof until end of turn.
+When The Signless dies, draw X cards, where X is his power.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheSignless.jpg</imagepath>
+    <number>0019</number>
+  </card>
+  <card>
+    <name>Skaian Battleship</name>
+    <cost>3W</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Vehicle </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Crew 6, Flying (Tap any number of creatures you control with total power 6 or more: This Vehicle becomes an artifact creature until end of turn.)
+Skaian Battleship can block an additional 3 creatures.
+T: Skaian Battleship deals X damage to target creature, where X is the number of Soldiers crewing Skaian Battleship.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>8</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SkaianBattleship.jpg</imagepath>
+    <number>0020</number>
+  </card>
+  <card>
+    <name>Squiddles!</name>
+    <cost>1CW</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Eldrazi Toy </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Devoid (This card has no color.)
+Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)
+White mana you would add is colorless instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Squiddles.jpg</imagepath>
+    <number>0021</number>
+  </card>
+  <card>
+    <name>Staying Alive</name>
+    <cost>WW</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Enchant Creature
+Flash
+If enchanted creature would leave the battlefield, you may pay WWWWW. If you don’t. remove Staying Alive from this creature.</rules>
+    <flavor>And Intending To Stay That Way.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>StayingAlive.jpg</imagepath>
+    <number>0022</number>
+  </card>
+  <card>
+    <name>Virgin Mother Grub</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Virgin Mother Grub, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Virgin Mother Grub.)
+Lifelink, Flying</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>VirginMotherGrub.jpg</imagepath>
+    <number>0023</number>
+  </card>
+  <card>
+    <name>Breath and Space</name>
+    <cost>1UU</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Kicker 1 (You may pay an additional 1 as you cast this spell.)
+Airbend two target creatures. If Breath and Space was kicked, put a +1/+1 and a flying counter each on them when they enter. (To airbend a permanent, exile it. While it’s exiled, its owner may cast it from exile by paying 2 rather than its mana cost.) </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BreathandSpace.jpg</imagepath>
+    <number>0024</number>
+  </card>
+  <card>
+    <name>Feferi Peixes</name>
+    <cost>4UU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Trolls you control have islandwalk. (This creature can’t be blocked as long as defending player controls a Trolls you control have island.)
+Whenever Feferi Peixes deals combat damage to a player, create an 8/8 blue Kraken creature token.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>FeferiPeixes.jpg</imagepath>
+    <number>0025</number>
+  </card>
+  <card>
+    <name>Goatdad</name>
+    <cost>3U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Beast Lusus </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Lusus, islandwalk (When you cast Goatdad, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Goatdad. This creature can’t be blocked as long as defending player controls an island.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Goatdad.jpg</imagepath>
+    <number>0026</number>
+  </card>
+  <card>
+    <name>The Helmsman</name>
+    <cost>3UU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  Pilot </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>The Helmsman can crew vehicles as though his power was 3 greater.
+Whenever a vehicle you control deals combat damage to a player, you may draw a card.
+The Helmsmans power is equal to the number of cards in your hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>*</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheHelmsman.jpg</imagepath>
+    <number>0027</number>
+  </card>
+  <card>
+    <name>John Egbert</name>
+    <cost>2UU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Monk </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>JohnEgbert.jpg</imagepath>
+    <number>0028a</number>
+  </card>
+  <card>
+    <name>John, Through the 4th Wall</name>
+    <cost>4UUU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Avatar </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flying
+Whenever John attacks, the player next clockwise to target permanent’s controller gains control over it.
+Johns power is equal to two times the number of permanents not controlled by their owners.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>*</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>JohnThroughthe4thWall.jpg</imagepath>
+    <number>0029</number>
+  </card>
+  <card>
+    <name>Lonner Sailin</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>LonnerSailin.jpg</imagepath>
+    <number>0030</number>
+  </card>
+  <card>
+    <name>Maroon Leprechaun</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Gnome </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever an Avatar creature you control enters, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>MaroonLeprechaun.jpg</imagepath>
+    <number>0031</number>
+  </card>
+  <card>
+    <name>Marquise Spinneret Mindfang</name>
+    <cost>3UU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk Pirate </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Islandwalk (This creature can’t be blocked as long as defending player controls an Island.)
+When Marquise Spinneret Mindfang enters, investigate. (Create a Clue token. It’s an artifact with “2, Sacrifice this artifact: Draw a card.”)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>MarquiseSpinneretMindfang.jpg</imagepath>
+    <number>0032</number>
+  </card>
+  <card>
+    <name>Nannasprite</name>
+    <cost>1UU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Trickster (Whenever this creature deals damage to a player, both you and that player discard your hands and draw seven cards each.)
+Whenever you draw your second card each turn, put a +1/+1 counter on Nannasprite.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Nannasprite.jpg</imagepath>
+    <number>0033</number>
+  </card>
+  <card>
+    <name>Oglogoth</name>
+    <cost>2CU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Eldrazi </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Devoid (This card has no color.)
+Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)
+Blue mana you would add is colorless instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Oglogoth.jpg</imagepath>
+    <number>0034</number>
+  </card>
+  <card>
+    <name>Scourge Sister Strife</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>You and target opponent each draw a card. You deal damage equal to the number of cards in your hand to that opponent. Your opponent does the same to you.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>ScourgeSisterStrife.jpg</imagepath>
+    <number>0035</number>
+  </card>
+  <card>
+    <name>Seahorse Lusus</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fish Lusus </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Lusus, islandwalk (When you cast Seahorse Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Seahorse Lusus. This creature can’t be blocked as long as defending player controls an island.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SeahorseLusus.jpg</imagepath>
+    <number>0036</number>
+  </card>
+  <card>
+    <name>Sprite</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Whenever you put one or more counters on permanents you control, draw a card. This ability only triggers once each turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Sprite.jpg</imagepath>
+    <number>0037</number>
+  </card>
+  <card>
+    <name>Supportive Sprite</name>
+    <cost>UU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When Supportive Sprite enters, put a +1/+1 counter on target creature.
+4UU: Proliferate (Choose any number of permanents and/or players, then give each another counter of each kind already there.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>neostellarjpeg</illustrator>
+    <imagepath>SupportiveSprite.jpg</imagepath>
+    <number>0038</number>
+  </card>
+  <card>
+    <name>Trickster Mode</name>
+    <cost>3UU</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Up to four target creatures have Trickster until end of turn. (Whenever this creature deals damage to a player, both you and that player discard your hands and draw seven cards each.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Izzydactyl</illustrator>
+    <imagepath>TricksterMode.jpg</imagepath>
+    <number>0039</number>
+  </card>
+  <card>
+    <name>Whale Lusus</name>
+    <cost>2UUU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Whale Lusus </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Lusus (When you cast Whale Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Whale Lusus.)
+When this creature attacks, return up to 2 target creatures defending player controls to their owners hands.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>WhaleLusus.jpg</imagepath>
+    <number>0040</number>
+  </card>
+  <card>
+    <name>Zebra Lusus</name>
+    <cost>1UU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Horse Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Zebra Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Zebra Lusus.)
+Horsemanship (This creature can’t be blocked except by creatures with horsemanship.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>ZebraLusus.jpg</imagepath>
+    <number>0041</number>
+  </card>
+  <card>
+    <name>Aradia Megido</name>
+    <cost>3B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Ranger </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Menace
+When Aradia Megido dies, create a 1/1 black and white spirit creature token with flying and a 1/1 colorless robot artifact creature token with flying.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>AradiaMegido.jpg</imagepath>
+    <number>0042</number>
+  </card>
+  <card>
+    <name>Casey</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Lizard </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>5, T: Return target creature from the graveyard to the battlefield. Casey phases out. (Treat it and anything attached to it as though they don’t exist until its controller’s next turn.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Casey.jpg</imagepath>
+    <number>0043</number>
+  </card>
+  <card>
+    <name>Crab Lusus</name>
+    <cost>3B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Crab Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Crab Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Crab Lusus.)
+Wither (This deals damage to creatures in the form of -1/-1 counters.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CrabLusus.jpg</imagepath>
+    <number>0044</number>
+  </card>
+  <card>
+    <name>Erisolsprite</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>kechoban</illustrator>
+    <imagepath>Erisolsprite.jpg</imagepath>
+    <number>0045</number>
+  </card>
+  <card>
+    <name>Fozzer Velyes</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever a Troll you control dies, create a 0/1 black Troll Skeleton creature token.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>FozzerVelyes.jpg</imagepath>
+    <number>0046</number>
+  </card>
+  <card>
+    <name>The Grand Highblood</name>
+    <cost>5B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Advisor </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Trample</rules>
+    <flavor></flavor>
+    <stats>
+      <power>7</power>
+      <toughness>7</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheGrandHighblood.jpg</imagepath>
+    <number>0047</number>
+  </card>
+  <card>
+    <name>Grimdarkness</name>
+    <cost>CB</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Enchant creature
+Enchanted creature has wither. (This deals damage to creatures in the form of -1/-1 counters.)
+If you have 7 or more cards in your hand, enchanted creature gets +5/+5.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Grimdarkness.jpg</imagepath>
+    <number>0048</number>
+  </card>
+  <card>
+    <name>Guy Fieri</name>
+    <cost>3BB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Assassin </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Menace
+When Guy Fieri enters, each other creature gets -1/-1 until end of turn. Whenever a creature dies this turn, each creature other than Guy Fieri gets -1/-1 until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>GuyFieri.jpg</imagepath>
+    <number>0049</number>
+  </card>
+  <card>
+    <name>Isopod Lusus</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Insect Lusus </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Lusus (When you cast Isopod Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Isopod Lusus.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>IsopodLusus.jpg</imagepath>
+    <number>0050</number>
+  </card>
+  <card>
+    <name>It Really Is Such Bullshit</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Until end of turn, creatures lose flying and cannot gain flying.</rules>
+    <flavor>HOW MUCH BULLSHIT IS IT THAT WE’RE PRETTY MUCH THE ONLY TWO ASSHOLES LEFT WHO CAN’T FLY?!</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>ItReallyIsSuchBullshit.jpg</imagepath>
+    <number>0051</number>
+  </card>
+  <card>
+    <name>Kurloz Makara</name>
+    <cost>BBB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever a troll dies, you may gain 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Xumimo</illustrator>
+    <imagepath>KurlozMakara.jpg</imagepath>
+    <number>0052</number>
+  </card>
+  <card>
+    <name>Lich Queen</name>
+    <cost>3BB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Lich Underling Noble </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever Lich Queen or another nontoken Underling dies, create a 1/1 black Underling creature token with menace.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>LichQueen.jpg</imagepath>
+    <number>0053</number>
+  </card>
+  <card>
+    <name>Lord English’s Rage</name>
+    <cost>3BB</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Destroy target nonblack creature. It can’t be regenerated.
+Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>LordEnglishsRage.jpg</imagepath>
+    <number>0054</number>
+  </card>
+  <card>
+    <name>Murder</name>
+    <cost>1BB</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Destroy target creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Murder.jpg</imagepath>
+    <number>0055</number>
+  </card>
+  <card>
+    <name>Nrub’yiglith</name>
+    <cost>2CB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Eldrazi </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Devoid (This card has no color.)
+Annihilator 2 (Whenever this creature attacks, defending player sacrifices two permanents.)
+Black mana you would add is colorless instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Nrubyiglith.jpg</imagepath>
+    <number>0056</number>
+  </card>
+  <card>
+    <name>Orphaner Dualscar</name>
+    <cost>3B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  Merfolk Rogue </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Reach
+When Orphaner Dualscar enters, turn up to one target face down creature face up.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>OrphanerDualscar.jpg</imagepath>
+    <number>0057</number>
+  </card>
+  <card>
+    <name>Resurrection Beam</name>
+    <cost>2BB</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Return target creature from your graveyard to the battlefield tapped. If you play this spell while declaring blockers, you may assign that creature as a blocker and it has reach until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>ResurrectionBeam.jpg</imagepath>
+    <number>0058</number>
+  </card>
+  <card>
+    <name>Server Player</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Avatar </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Sacrifice three treasures: Put target noncreature permanent from your hand onto the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>kurooequinox</illustrator>
+    <imagepath>ServerPlayer.jpg</imagepath>
+    <number>0059</number>
+  </card>
+  <card>
+    <name>Skaian Soldier</name>
+    <cost>2/B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Soldier </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SkaianSoldier.jpg</imagepath>
+    <number>0060</number>
+  </card>
+  <card>
+    <name>Skeletal Giclops</name>
+    <cost>4B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Skeleton Giant Underling </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Undying (When this creature dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner’s control with a +1/+1 counter on it.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SkeletalGiclops.jpg</imagepath>
+    <number>0061</number>
+  </card>
+  <card>
+    <name>Spidermom</name>
+    <cost>2BB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Spider Lusus </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Lusus, reach (When you cast Spidermom, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Spidermom.)
+Sacrifice a Troll: Put a +1/+1 counter on this creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Spidermom.jpg</imagepath>
+    <number>0062</number>
+  </card>
+  <card>
+    <name>Tavrisprite</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>When Tavrisprite enters, sacrifice them.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Jotaku</illustrator>
+    <imagepath>Tavrisprite.jpg</imagepath>
+    <number>0063</number>
+  </card>
+  <card>
+    <name>Void and Mind</name>
+    <cost>1BB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Target player sacrifices a creature. If it was legendary, they draw X cards and lose X life where X is that creatures toughness.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>VoidandMind.jpg</imagepath>
+    <number>0064</number>
+  </card>
+  <card>
+    <name>Aradiasprite</name>
+    <cost>RR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Frog Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flying
+Afterlife 2 (Whenever this creature dies, create two 1/1 white and black Spirit creature tokens with flying.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>s008m</illustrator>
+    <imagepath>Aradiasprite.jpg</imagepath>
+    <number>0065</number>
+  </card>
+  <card>
+    <name>Azdaja Knelax</name>
+    <cost>RR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Berserker </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>AzdajaKnelax.jpg</imagepath>
+    <number>0066</number>
+  </card>
+  <card>
+    <name>Bicyclops</name>
+    <cost>3RRR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Giant Lusus </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Lusus (When you cast Bicyclops, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Bicyclops.)
+Double strike</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Bicyclops.jpg</imagepath>
+    <number>0067</number>
+  </card>
+  <card>
+    <name>Caliborn, Infuriated</name>
+    <cost>5R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Human Shaman </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever another creature dies, Caliborn deals 2 damage to target player.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CalibornInfuriated.jpg</imagepath>
+    <number>0068</number>
+  </card>
+  <card>
+    <name>Cirava Hermod</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Cirava Hermod enters, create a Treasure token.
+As long as you control five or more Treasures, Treasures you control have “T: Add one mana of any color.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CiravaHermod.jpg</imagepath>
+    <number>0069</number>
+  </card>
+  <card>
+    <name>Damara Megido</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Other spirits you control get +1/+1.
+Whenever a spirit you control dies, Search your library for an arcane card, reveal it, and put it into your hand. Then shuffle your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>MICHELANGELO12</illustrator>
+    <imagepath>DamaraMegido.jpg</imagepath>
+    <number>0070</number>
+  </card>
+  <card>
+    <name>Davesprite</name>
+    <cost>2RR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flying
+Heroic — Whenever you cast a spell that targets Davesprite, he deals 2 damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Jotaku</illustrator>
+    <imagepath>Davesprite.jpg</imagepath>
+    <number>0071</number>
+  </card>
+  <card>
+    <name>Defensive Sprite</name>
+    <cost>RR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>RR: Defensive Sprite has first strike until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>breakshackle</illustrator>
+    <imagepath>DefensiveSprite.jpg</imagepath>
+    <number>0072</number>
+  </card>
+  <card>
+    <name>Dragon Underling</name>
+    <cost>3R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Dragon Underling </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Flying, Ward 1 (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 1.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>DragonUnderling.jpg</imagepath>
+    <number>0073</number>
+  </card>
+  <card>
+    <name>Drown in Lava</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Drown in Lava deals X damage to target creature, where X is the number of mountains you control, rounded up.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>DrowninLava.jpg</imagepath>
+    <number>0074</number>
+  </card>
+  <card>
+    <name>Lava Kraken</name>
+    <cost>3RR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Kraken Underling </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>8</power>
+      <toughness>8</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>LavaKraken.jpg</imagepath>
+    <number>0075</number>
+  </card>
+  <card>
+    <name>Orange Leprechaun</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Gnome </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Haste, first strike
+Vanishing 3 (This creature enters with three time counters on it. At the beginning of your upkeep, remove a time counter from it. When the last is removed, sacrifice it.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>figgs</illustrator>
+    <imagepath>OrangeLeprechaun.jpg</imagepath>
+    <number>0076</number>
+  </card>
+  <card>
+    <name>Pyralspite</name>
+    <cost>3RR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Dragon Lusus </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Lusus (When you cast Pyralspite, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Pyralspite.)
+Flying, menace, intimidate (This creature can’t be blocked except by artifact creatures and/or creatures that share a color with it.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Pyralspite.jpg</imagepath>
+    <number>0077</number>
+  </card>
+  <card>
+    <name>Rage and Hope</name>
+    <cost>1RR</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Choose two:
+• Destroy target artifact.
+• Target creature gets +2/+0 until end of turn.
+• Add R.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>RageandHope.jpg</imagepath>
+    <number>0078</number>
+  </card>
+  <card>
+    <name>Shatter</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Destroy target artifact.</rules>
+    <flavor>dude...
+you got to
+SNAP it,
+BROKE-WAYS</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Shatter.jpg</imagepath>
+    <number>0079</number>
+  </card>
+  <card>
+    <name>Slice and Dice</name>
+    <cost>4RR</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Slice and Dice deals 4 damage to each creature.
+Cycling 2R (2R, Discard this card: Draw a card.)
+When you cycle Slice and Dice, ŷou may have it deal 1 damage to each creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SliceandDice.jpg</imagepath>
+    <number>0080</number>
+  </card>
+  <card>
+    <name>Spiky Horrorterror</name>
+    <cost>2CR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Eldrazi </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Devoid (This card has no color.)
+Spiky Horrorterror has Annihilator X where X is the number of instant and sorcery spells you have cast this turn. (Whenever this creature attacks, defending player sacrifices X permanents.)
+Red mana you would add is colorless instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Noxeorn</illustrator>
+    <imagepath>SpikyHorrorterror.jpg</imagepath>
+    <number>0081</number>
+  </card>
+  <card>
+    <name>Vestri</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>RR: Vestri gets +1/+0 until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Vestri.jpg</imagepath>
+    <number>0082</number>
+  </card>
+  <card>
+    <name>Violent Cherub</name>
+    <cost>3RR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Angel </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying, Trample
+If you control another Angel when Violent Cherub enters, sacrifice Violent Cherub and another angel. Then, Search your library for an Angel card, reveal it, and put it onto the battlefield tapped. Then shuffle your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>ViolentCherub.jpg</imagepath>
+    <number>0083</number>
+  </card>
+  <card>
+    <name>The Arch Deaconstructor</name>
+    <cost>3G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Beast Soldier  </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>If another Soldier you control would be dealt damage, 1 of that damage is dealt to The Arch Deaconstructor instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheArchDeaconstructor.jpg</imagepath>
+    <number>0084</number>
+  </card>
+  <card>
+    <name>Arquiusprite</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T, Sacrifice Arquiusprite: Add GGGG. Spend this mana only to cast an Avatar creature spell.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>TheBealeCiphers</illustrator>
+    <imagepath>Arquiusprite.jpg</imagepath>
+    <number>0085</number>
+  </card>
+  <card>
+    <name>Arrowshaped Horrorterror</name>
+    <cost>2CG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Eldrazi </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Devoid (This card has no color.)
+Reach
+Green mana you would add is colorless instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Noxeorn</illustrator>
+    <imagepath>ArrowshapedHorrorterror.jpg</imagepath>
+    <number>0086</number>
+  </card>
+  <card>
+    <name>Blood and Life</name>
+    <cost>1GG</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Until end of turn, whenever you cast a creature spell, it has lusus. (When you cast it, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of the creature you have cast.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BloodandLife.jpg</imagepath>
+    <number>0087</number>
+  </card>
+  <card>
+    <name>Bug Monsters</name>
+    <cost>3GG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Insect Beast Underling </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Reach, Trample</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BugMonsters.jpg</imagepath>
+    <number>0088</number>
+  </card>
+  <card>
+    <name>Cholerbear Lusus</name>
+    <cost>3G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Bear Lusus </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Lusus (When you cast Cholerbear Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Cholerbear Lusus.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CholerbearLusus.jpg</imagepath>
+    <number>0089</number>
+  </card>
+  <card>
+    <name>Client Player</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Avatar </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Client Player and target non-legendary creature fight. If that creature dies, create a treasure token. (Each deals damage equal to its power to the other.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>emily, rundoublerun</illustrator>
+    <imagepath>ClientPlayer.jpg</imagepath>
+    <number>0090</number>
+  </card>
+  <card>
+    <name>Commune With The Horrorterrors</name>
+    <cost>1CG</cost>
+    <type>
+      <supertype>Kindred Instant</supertype>
+      <subtype>Eldrazi </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Devoid (This card has no color.)
+Add CCC.
+Draw a card or put target card you own in exile into your hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CommuneWithTheHorrorterrors.jpg</imagepath>
+    <number>0091</number>
+  </card>
+  <card>
+    <name>Davepetasprite²</name>
+    <cost>4G</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Cat Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Other Cats, Spirits, and Avatars get +1/+1.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>appulsprite</illustrator>
+    <imagepath>Davepetasprite.jpg</imagepath>
+    <number>0092</number>
+  </card>
+  <card>
+    <name>Diemen Xicali</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>When Diemen Xicali enters, create three Food tokens. (They’re artifacts with “2, T, Sacrifice this artifact: You gain 3 life.”)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>DiemenXicali.jpg</imagepath>
+    <number>0093</number>
+  </card>
+  <card>
+    <name>The E%ecutor</name>
+    <cost>2GG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  Warrior </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Revolt — If a permanent you controlled left the battlefield this turn, The E%ecutor enters with a +1/+1 counter and a reach counter.
+Remove two counters from The E%ecutor: Destroy target creature with flying.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheEecutor.jpg</imagepath>
+    <number>0094</number>
+  </card>
+  <card>
+    <name>Glacial Treetrudger</name>
+    <cost>GG</cost>
+    <type>
+      <supertype>Snow Creature</supertype>
+      <subtype>Beast Lusus </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Lusus, defender (When you cast Glacial Treetrudger, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Glacial Treetrudger.)
+T: Add G</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>GlacialTreetrudger.jpg</imagepath>
+    <number>0095</number>
+  </card>
+  <card>
+    <name>Horuss Zahhak</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Horse Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Artifact creatures you control enter with two additional +1/+1 counters.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Mihirahira02</illustrator>
+    <imagepath>HorussZahhak.jpg</imagepath>
+    <number>0096</number>
+  </card>
+  <card>
+    <name>Idarat Catlaz</name>
+    <cost>2/G</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Rinnykrz</illustrator>
+    <imagepath>IdaratCatlaz.jpg</imagepath>
+    <number>0097</number>
+  </card>
+  <card>
+    <name>Jadesprite</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Dog Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Sacrifice Jadesprite: Put your choice of a reach, stun, or +1/+1 counter on target creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Jadesprite.jpg</imagepath>
+    <number>0098</number>
+  </card>
+  <card>
+    <name>Jaspersprite</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Cat Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>GG: Adapt 1. (If this creature has no +1/+1 counters on it, put a +1/+1 counter on it.)
+Whenever you put a +1/+1 counter on Jaspersprite, gain 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Jaspersprite.jpg</imagepath>
+    <number>0099</number>
+  </card>
+  <card>
+    <name>Kanaya Mariam</name>
+    <cost>2GG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Kanaya Mariam enters or attacks, create a Troll token. (It’s a 1/1 red creature with haste.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>KanayaMariam.jpg</imagepath>
+    <number>0100</number>
+  </card>
+  <card>
+    <name>Prototype Kernel</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Choose a creature type and color as Prototype Kernel enters. Creatures with power 2 or less are that type and color in addition to their other types and colors.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>PrototypeKernel.jpg</imagepath>
+    <number>0101</number>
+  </card>
+  <card>
+    <name>Savage Punch</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Target creature you control fights target creature you don’t control.
+Ferocious — The creature you control gets +2/+2 until end of turn before it fights if you control a creature with power 4 or greater.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SavagePunch.jpg</imagepath>
+    <number>0102</number>
+  </card>
+  <card>
+    <name>Siege Titan</name>
+    <cost>3G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Soldier </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Reach</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SiegeTitan.jpg</imagepath>
+    <number>0103</number>
+  </card>
+  <card>
+    <name>Skaian Knight</name>
+    <cost>3GG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Horse Beast Soldier  </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Trample</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SkaianKnight.jpg</imagepath>
+    <number>0104</number>
+  </card>
+  <card>
+    <name>Slice in Twain</name>
+    <cost>2GG</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Destroy target artifact or enchantment.
+Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SliceinTwain.jpg</imagepath>
+    <number>0105</number>
+  </card>
+  <card>
+    <name>Sweep-Whack</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Target creature you control and target creature an opponent controls fight. (Each deals damage equal to its power to the other.)
+If the creature you control is equipped, it deals damage equal to its power to the other creature instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Sweep-Whack.jpg</imagepath>
+    <number>0106</number>
+  </card>
+  <card>
+    <name>Yeti Lusus</name>
+    <cost>2GG</cost>
+    <type>
+      <supertype>Snow Creature</supertype>
+      <subtype>Yeti Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Yeti Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Yeti Lusus.)
+Echo S (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)
+T: Add C.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>YetiLusus.jpg</imagepath>
+    <number>0107</number>
+  </card>
+  <card>
+    <name>Agressive Knitting</name>
+    <cost>2/GR</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Target equipped creature has reach until end of turn, and deals damage equal to its power to target creature or planeswalker.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>AgressiveKnitting.jpg</imagepath>
+    <number>0108</number>
+  </card>
+  <card>
+    <name>Aranea Serket</name>
+    <cost>2UB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spider Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever a Troll you control enters, you may draw a card.
+If you have exactly 8 cards in hand, Aranea Serket has base power and toughness 8/8.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Hikari-luv</illustrator>
+    <imagepath>AraneaSerket.jpg</imagepath>
+    <number>0109</number>
+  </card>
+  <card>
+    <name>Becquerel</name>
+    <cost>2GGUU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Dog Avatar </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Becquerel can black an additional creature each combat.
+Becquerel can block creatures as though those creatures didn’t have trample. (Their damage is completely blocked even if Becquerel gets sacrificed after declaring blockers.)
+Sacrifice Becquerel and an artifact: Transform Becquerel.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Becquerel.jpg</imagepath>
+    <number>0110a</number>
+  </card>
+  <card>
+    <name>Becquerel</name>
+    <cost>2GGUU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Dog Avatar </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Becquerel can black an additional creature each combat.
+Becquerel can block creatures as though those creatures didn’t have trample. (Their damage is completely blocked even if Becquerel gets sacrificed after declaring blockers.)
+Sacrifice Becquerel and an artifact: Transform Becquerel.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Becquerel.jpg</imagepath>
+    <number>0111a</number>
+  </card>
+  <card>
+    <name>Becquerel</name>
+    <cost>2GGUU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Dog Avatar </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Becquerel can black an additional creature each combat.
+Becquerel can block creatures as though those creatures didn’t have trample. (Their damage is completely blocked even if Becquerel gets sacrificed after declaring blockers.)
+Sacrifice Becquerel and an artifact: Transform Becquerel.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Becquerel.jpg</imagepath>
+    <number>0112a</number>
+  </card>
+  <card>
+    <name>Black King</name>
+    <cost>3BG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Noble </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Wither (This deals damage to creatures in the form of -1/-1 counters.)
+Landfall — Whenever a land enters under your control, if you are the monarch, put your choice of a +1/+1, reach, first strike, or shield counter on each creature you control.
+Partner with Black Queen (When this creature enters, target player may put Black Queen into their hand from their library, then shuffle.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BlackKing.jpg</imagepath>
+    <number>0113</number>
+  </card>
+  <card>
+    <name>Black Queen</name>
+    <cost>2UB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Noble </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying
+When Black Queen enters, you become the monarch. (The monarch draws a card at the beginning of their end step. Whenever the monarch is dealt combat damage by a creature, its controller becomes the monarch.)
+Soldier creatures you control have wither. (This deals damage to creatures in the form of -1/-1 counters.)
+Partner with Black King (When this creature enters, target player may put Black King into their hand from their library, then shuffle.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BlackQueen.jpg</imagepath>
+    <number>0114</number>
+  </card>
+  <card>
+    <name>Boldir Lamati</name>
+    <cost>4UB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Detective </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Hideaway 2 — That card becomes plotted. (When this creature enters, look at the top two cards of your library, exile one face down, then put the rest on the bottom in a random order. You may cast it as a sorcery on a later turn without paying its mana cost.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BoldirLamati.jpg</imagepath>
+    <number>0115</number>
+  </card>
+  <card>
+    <name>Brutal Entertainment</name>
+    <cost>1BR</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Creatures get -1/-1 until end of turn. Whenever a creature dies this turn, creatures get -1/-1 until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>BrutalEntertainment.jpg</imagepath>
+    <number>0116</number>
+  </card>
+  <card>
+    <name>Chixie Roixmr</name>
+    <cost>UR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Performer </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever one or more Trolls enter under your control, create a Treasure token. This ability only triggers once each turn. (It’s an artifact with “T, Sacrifice this artifact: Add one mana of any color.”)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>ChixieRoixmr.jpg</imagepath>
+    <number>0117</number>
+  </card>
+  <card>
+    <name>The Condesce</name>
+    <cost>1UUBBRR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk Noble </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>When The Condesce or another Troll enters, you become the monarch. (The monarch draws a card at the beginning of their end step. Whenever the monarch is dealt combat damage by a creature, its controller becomes the monarch.)
+Tap five Trolls you control: Untap target creature and gain control over it. This effect lasts indefinitely. It has haste until end of turn.</rules>
+    <flavor>OBEY.</flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheCondesce.jpg</imagepath>
+    <number>0118</number>
+  </card>
+  <card>
+    <name>Cuspidated Grimalkin</name>
+    <cost>RGW</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Beast Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Cuspidated Grimalkin, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Cuspidated Grimalkin.)
+Haste, vigilance</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CuspidatedGrimalkin.jpg</imagepath>
+    <number>0119</number>
+  </card>
+  <card>
+    <name>Dammek</name>
+    <cost>1UR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Bard </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Reach
+Whenever you surveil, Dammek deals 2 damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Dammek.jpg</imagepath>
+    <number>0120</number>
+  </card>
+  <card>
+    <name>Dave Strider</name>
+    <cost>1UR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Knight </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>DaveStrider.jpg</imagepath>
+    <number>0121a</number>
+  </card>
+  <card>
+    <name>The Derse Dreamers</name>
+    <cost>1WUBR</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Dave Rose </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>The Derse Dreamerss power and toughness are equal to your life total.
+Whenever The Derse Dreamers takes damage, you lose that much life.
+Retcon — The first time you or a permanent you control are targeted by an ability or spell an opponent controls, you may change the target to another legal target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>*</power>
+      <toughness>*</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheDerseDreamers.jpg</imagepath>
+    <number>0122</number>
+  </card>
+  <card>
+    <name>Dirk, the Souldrainer</name>
+    <cost>1WB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Avatar </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lifelink
+T: Put a -1/-1 counter on target creature, and a +1/+1 counter on Dirk.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>DirktheSouldrainer.jpg</imagepath>
+    <number>0123</number>
+  </card>
+  <card>
+    <name>The Disciple</name>
+    <cost>2GW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  Cleric </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Soulbond
+Whenever you put a lore counter on a saga you control, investigate.
+Whenever The Disciple or the bonded creature die, Search your library for a saga card, reveal it, and put it into your hand. Then shuffle your library.</rules>
+    <flavor>She hid in caves for many sweeps, transcribing all of his scripture from memory on the walls in the blood of slain creature, and lived the rest of her days in monastic savagery.</flavor>
+    <stats>
+      <power>3</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheDisciple.jpg</imagepath>
+    <number>0124</number>
+  </card>
+  <card>
+    <name>Doc Scratch</name>
+    <cost>2BGU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Eldrazi Avatar </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>UB, T: Exile target creature, then return that card to the battlefield under its owner’s control.
+T: Add GGG. Use this mana only to pay emerge costs of creatures.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>DocScratch.jpg</imagepath>
+    <number>0125</number>
+  </card>
+  <card>
+    <name>Equius Zahhak</name>
+    <cost>RGWU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Knight </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Trolls and Robots you control have horsemanship. (This creature can’t be blocked except by creatures with horsemanship.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>EquiusZahhak.jpg</imagepath>
+    <number>0126</number>
+  </card>
+  <card>
+    <name>Eridan Ampora</name>
+    <cost>RWB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever a creature with power 4 or greater that an opponent controls dies, create two Treasure tokens.
+1BBRR, T: Destroy target creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>EridanAmpora.jpg</imagepath>
+    <number>0127</number>
+  </card>
+  <card>
+    <name>Fairy Bull</name>
+    <cost>1GU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Cow Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Fairy Bull, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Fairy Bull.)
+Flying, Trample</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>FairyBull.jpg</imagepath>
+    <number>0128</number>
+  </card>
+  <card>
+    <name>Fefetasprite</name>
+    <cost>2GU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Merfolk Cat Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever Fefetasprite attacks, flip a coin:
+• Heads — Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)
+• Tails — Sacrifice Fefetasprite.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Zeborah</illustrator>
+    <imagepath>Fefetasprite.jpg</imagepath>
+    <number>0129</number>
+  </card>
+  <card>
+    <name>Folykl and Kuprum</name>
+    <cost>GUR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Prowess
+Whenever an artifact enters under your control, Folykl and Kuprum fights up to one target creature an opponent controls.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>FolyklandKuprum.jpg</imagepath>
+    <number>0130</number>
+  </card>
+  <card>
+    <name>Friendly Conversation</name>
+    <cost>2GW</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Choose two target creatures. Put a +1/+1 counter and two light counters on each of them. Then, gain X life, where X is the total toughness of those creatures. (If a permanent with a light counter would be dealt damage, remove that many light counters from it. Reduce the damage by the number of counters removed this way.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>FriendlyConversation.jpg</imagepath>
+    <number>0131</number>
+  </card>
+  <card>
+    <name>Friendship to the Rescue</name>
+    <cost>1GW</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As an additional cost to cast Friendship to the Rescue, you may sacrifice a creature.
+Prevent all combat damage that would be dealt this turn.
+If you paid the additional cost, destroy target creature an opponent controls and gain 4 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>FriendshiptotheRescue.jpg</imagepath>
+    <number>0132</number>
+  </card>
+  <card>
+    <name>Gamzee Makara</name>
+    <cost>UUBBRR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Berserker </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>3BB: Exile a random card from your library, then shuffle. That card becomes plotted. (You may cast it as a sorcery on a later turn without paying its mana cost.)
+If you own 5 or more cards in exile, Gamzee Makara has trample.</rules>
+    <flavor>FROM YOUR VEINS WILL DRIP MY MIRACLES. your crushed bones will make my special stardust.</flavor>
+    <stats>
+      <power>4</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>GamzeeMakara.jpg</imagepath>
+    <number>0133</number>
+  </card>
+  <card>
+    <name>Gcatavrosprite</name>
+    <cost>1RGW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Cat Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Kicker 2 (You may pay an additional 2 as you cast this spell.)
+If you paid Gcatavrosprites kicker cost as you cast him, he enters with a +1/+1 counter and you gain 3 life.
+At the beginning of your upkeep, Gcatavrosprite deals 1 damage to you.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>QuintusHazard</illustrator>
+    <imagepath>Gcatavrosprite.jpg</imagepath>
+    <number>0134</number>
+  </card>
+  <card>
+    <name>Genesis Frog</name>
+    <cost></cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Frog </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Suspend 10 WUBRG (Rather than cast this card from your hand, pay WUBRG and exile it with ten time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, you may cast it without paying its mana cost. It has haste.)
+When Genesis Frog enters and at the beginning of your end step, if you control a Session and at least four legendary creautres, you win the game.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>miirshroom</illustrator>
+    <imagepath>GenesisFrog.jpg</imagepath>
+    <number>0135</number>
+  </card>
+  <card>
+    <name>God Cat</name>
+    <cost>GGU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Cat Avatar </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flash
+T: Return God Cat and up to one other creature to their owners hands.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>GodCat.jpg</imagepath>
+    <number>0136</number>
+  </card>
+  <card>
+    <name>Grimbark Jade</name>
+    <cost>3BG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Dog Avatar </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever Grimbark Jade attacks, target creature has your choice of power and toughness 1/1 or 8/8 until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>GrimbarkJade.jpg</imagepath>
+    <number>0137</number>
+  </card>
+  <card>
+    <name>The Handmaid</name>
+    <cost>2BRR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  Warlock </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Intimidate, Menace, Reach
+Whenever The Handmaid deals combat damage to a creature, attach a red Terrified Role token to that creature. (If you control another Role on it, put that one into the graveyard. Enchanted creature has “At the beginning of enchanted creatures owner, this enchantment deals 1 damage to that player”.)</rules>
+    <flavor>“While I am his weapon of subtlety and precision, the Handmaid is strictly an apparatus of terror and suffering.” — Doc Scratch</flavor>
+    <stats>
+      <power>3</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheHandmaid.jpg</imagepath>
+    <number>0138</number>
+  </card>
+  <card>
+    <name>Heroic Knights</name>
+    <cost>12/URR2/W</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Karkat Dave </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Heroic Knightss power and toughness are equal to your life total.
+Whenever Heroic Knights takes damage, you lose that much life.
+Retcon — The first time you or a permanent you control are targeted by an ability or spell an opponent controls, you may change the target to another legal target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>*</power>
+      <toughness>*</toughness>
+    </stats>
+    <illustrator>SonicLuxHedgeman</illustrator>
+    <imagepath>HeroicKnights.jpg</imagepath>
+    <number>0139</number>
+  </card>
+  <card>
+    <name>His Honorable Tyranny</name>
+    <cost>2UUBB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Lusus Advisor </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Lusus (When you cast His Honorable Tyranny, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of His Honorable Tyranny.)
+Sacrifice a Troll: Draw X cards where X is the sacrificed creatures toughness. You lose 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>HisHonorableTyranny.jpg</imagepath>
+    <number>0140</number>
+  </card>
+  <card>
+    <name>Homosuck</name>
+    <cost>BBGGUU</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Session </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Creatures have trickster. (Whenever this creature deals damage to a player, both you and that player discard your hands and draw seven cards each.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Panicawa</illustrator>
+    <imagepath>Homosuck.jpg</imagepath>
+    <number>0141</number>
+  </card>
+  <card>
+    <name>Jade Harley</name>
+    <cost>RRGW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Warlock </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>JadeHarley.jpg</imagepath>
+    <number>0142a</number>
+  </card>
+  <card>
+    <name>Jasprosesprite²</name>
+    <cost>2UB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Cat Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever you proliferate for the first time each turn, proliferate again afterwards. (To proliferate, choose any number of permanents and/or players, then give each another counter of each kind already there.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>SirJuliet</illustrator>
+    <imagepath>Jasprosesprite.jpg</imagepath>
+    <number>0143</number>
+  </card>
+  <card>
+    <name>Karkat Vantas</name>
+    <cost>2RRW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Crab </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Other Trolls you control get +2/+2.</rules>
+    <flavor>I DO TWO THINGS AND TWO THINGS ONLY, I DEVASTATE SORRY MOTHERFUCKERS, AND GET SHIT DONE AS AN AWESOME LEADER.</flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>KarkatVantas.jpg</imagepath>
+    <number>0144</number>
+  </card>
+  <card>
+    <name>Latula Pyrope</name>
+    <cost>1UR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Dragon Spirit </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Haste
+Kickflip — 2: Latula Pyrope has flying until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>R_Ih_Ni</illustrator>
+    <imagepath>LatulaPyrope.jpg</imagepath>
+    <number>0145</number>
+  </card>
+  <card>
+    <name>Lusus Caboosus</name>
+    <cost>GW</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Wolf Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Lusus Caboosus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Lusus Caboosus.)
+This creature can crew vehicles as though its power was 1 greater.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>LususCaboosus.jpg</imagepath>
+    <number>0146</number>
+  </card>
+  <card>
+    <name>Meenah Peixes</name>
+    <cost>WUB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Meenah Peixes enters, or whenever you commit a crime, you become the monarch. (Targeting opponents, anything they control, and/or cards in their graveyards is a crime. The monarch draws a card at the beginning of their end step. Whenever the monarch is dealt combat damage by a creature, its controller becomes the monarch.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>MeenahPeixes.jpg</imagepath>
+    <number>0147</number>
+  </card>
+  <card>
+    <name>Meulin Leijon</name>
+    <cost>BG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Cats you control have reach and get +1/+1.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>meowpuffs</illustrator>
+    <imagepath>MeulinLeijon.jpg</imagepath>
+    <number>0148</number>
+  </card>
+  <card>
+    <name>Mituna Captor</name>
+    <cost>UR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Prowess, Prowess</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Briskeel</illustrator>
+    <imagepath>MitunaCaptor.jpg</imagepath>
+    <number>0149</number>
+  </card>
+  <card>
+    <name>Neophyte Redglare</name>
+    <cost>2WU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  Advisor </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever a spell or an ability an opponent controls targets a creature you control, investigate, then investigate again. (To investigate, create a Clue token. It’s an artifact with “2, Sacrifice this artifact: Draw a card.”)
+Neophyte Redglares power is equal to the number of cards in your hand</rules>
+    <flavor></flavor>
+    <stats>
+      <power>*</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>NeophyteRedglare.jpg</imagepath>
+    <number>0150</number>
+  </card>
+  <card>
+    <name>Nepeta Leijon</name>
+    <cost>2GW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Cat </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Other Trolls and Cats you control get +1/+1.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>NepetaLeijon.jpg</imagepath>
+    <number>0151</number>
+  </card>
+  <card>
+    <name>Porrim Maryam</name>
+    <cost>1BG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever a nontoken Troll you control dies, create a Troll token. (It’s a 1/1 red creature with haste.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Lovelessfai</illustrator>
+    <imagepath>PorrimMaryam.jpg</imagepath>
+    <number>0152</number>
+  </card>
+  <card>
+    <name>Purple Leprechaun</name>
+    <cost>2UURR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Gnome </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Vanishing 2 (This creature enters with two time counters on it. At the beginning of your upkeep, remove a time counter from it. When the last is removed, sacrifice it.)
+Whenever a time counter is removed from Purple Leprechaun, create a token that’s a copy of them. (The copy enters with two time counters.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>figgs</illustrator>
+    <imagepath>PurpleLeprechaun.jpg</imagepath>
+    <number>0153</number>
+  </card>
+  <card>
+    <name>Ram Lusus</name>
+    <cost>1WB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Beast Lusus </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Lusus (When you cast Ram Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Ram Lusus.)
+Afterlife 1 (Whenever this creature dies, create a 1/1 white and black Spirit creature token with flying.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>RamLusus.jpg</imagepath>
+    <number>0154</number>
+  </card>
+  <card>
+    <name>Rip Apart</name>
+    <cost>RW</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Choose one — 
+• Rip Apart deals 3 damage to target creature or planeswalker.
+• Destroy target artifact or enchantment.</rules>
+    <flavor>Make her pay.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>RipApart.jpg</imagepath>
+    <number>0155</number>
+  </card>
+  <card>
+    <name>Rose Lalonde</name>
+    <cost>3WB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Human Warlock </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>RoseLalonde.jpg</imagepath>
+    <number>0156a</number>
+  </card>
+  <card>
+    <name>Rufioh Nitram</name>
+    <cost>1RW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spirit </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying
+UR: Rufioh Nitram gets +1/+1 until end of turn. Return them to your hand at the beginning of the next end step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Celestier</illustrator>
+    <imagepath>RufiohNitram.jpg</imagepath>
+    <number>0157</number>
+  </card>
+  <card>
+    <name>Skaian Bishop</name>
+    <cost>1GW</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Soldier </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Whenever you put one or more counters on creatures, you gain 2 life. This ability only activates once each turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SkaianBishop.jpg</imagepath>
+    <number>0158</number>
+  </card>
+  <card>
+    <name>Skylla Koriga</name>
+    <cost>1GW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Cat </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Beasts and Humans you control get +1/+1.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SkyllaKoriga.jpg</imagepath>
+    <number>0159</number>
+  </card>
+  <card>
+    <name>Sollux Captor</name>
+    <cost>2GU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Scientist </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Reach
+Whenever you discard a card or sacrifice a permanent, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SolluxCaptor.jpg</imagepath>
+    <number>0160</number>
+  </card>
+  <card>
+    <name>The Summoner</name>
+    <cost>4GU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll  Fairy </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying
+Beasts you control get +1/+1.
+During combat on your turn, Trolls you control get +1/+1 for each beast you control.
+3GU, discard a creature card: Search your library for a creature card, and put it onto the battlefield under your control. Then shuffle your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheSummoner.jpg</imagepath>
+    <number>0161</number>
+  </card>
+  <card>
+    <name>Tavros Nitram</name>
+    <cost>2RWW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Ox </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Equipment you control have “Equip Troll 1”.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TavrosNitram.jpg</imagepath>
+    <number>0162</number>
+  </card>
+  <card>
+    <name>Tavros the Useful</name>
+    <cost>RGW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Ox </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T, 2UB: Transform Tavros.
+Landfall — Whenever a land enters under your control, create a Troll token. (It’s a 1/1 red creature with haste.)</rules>
+    <flavor>Vriska: “You actually did something useful for once. I don’t konw how I’m supposed to process or handle this inform8ion... It’s... It’s completely messed up, is what it is.”</flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TavrostheUseful.jpg</imagepath>
+    <number>0163a</number>
+  </card>
+  <card>
+    <name>Terezi Pyrope</name>
+    <cost>1RWW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Dragon </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever a Dragon enters under your control, exile up to one target creature until Terezi Pyrope leaves the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TereziPyrope.jpg</imagepath>
+    <number>0164</number>
+  </card>
+  <card>
+    <name>Terezi’s Lusus</name>
+    <cost>2UURR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Dragon Lusus </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Lusus (When you cast Terezi’s Lusus, you may pay 3. If you do, create a 1/1 red Troll creature token with haste. It gains all abilities of Terezi’s Lusus.)
+Flying
+This creature gets +1/+0 for each card in your hand</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TerezisLusus.jpg</imagepath>
+    <number>0165</number>
+  </card>
+  <card>
+    <name>Troll Reuinon</name>
+    <cost>GW</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Target player gains 7 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TrollReuinon.jpg</imagepath>
+    <number>0166</number>
+  </card>
+  <card>
+    <name>Vikare Ratite</name>
+    <cost>RW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Pilot </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>At the beginning of every combat, you may sacrifice an artifact. If you do, Vikare Ratite has flying and gets +1/+1 until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>VikareRatite.jpg</imagepath>
+    <number>0167</number>
+  </card>
+  <card>
+    <name>Vindicate</name>
+    <cost>1WB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Destroy target creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Vindicate.jpg</imagepath>
+    <number>0168</number>
+  </card>
+  <card>
+    <name>Vriska Serket</name>
+    <cost>UUBRR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spider </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>1, Discard a card: Draw two cards.
+Sacrifice four artifacts: Draw eight cards.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>VriskaSerket.jpg</imagepath>
+    <number>0169</number>
+  </card>
+  <card>
+    <name>Vriska, the Strategist</name>
+    <cost>4UB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Spider </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Menace
+Whenever a creature you control attacks, draw a card.
+Vriskas power is equal to the number of cards in your hand.</rules>
+    <flavor>She’s got several irons in the fire.</flavor>
+    <stats>
+      <power>*</power>
+      <toughness>8</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>VriskatheStrategist.jpg</imagepath>
+    <number>0170</number>
+  </card>
+  <card>
+    <name>Wrath Angel</name>
+    <cost>2RW</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Angel  Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Shadow, Flying (This creature can block or be blocked by only creatures with shadow.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>WrathAngel.jpg</imagepath>
+    <number>0171</number>
+  </card>
+  <card>
+    <name>Xefros Tritoh</name>
+    <cost>RW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Mentor, training, lifelink (Whenever this creature attacks, put a +1/+1 counter on target attacking creature with lesser power. Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>XefrosTritoh.jpg</imagepath>
+    <number>0172</number>
+  </card>
+  <card>
+    <name>The Authors Hot Self Insert</name>
+    <cost>5W/U/BW/U/B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Avatar </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>The Authors Hot Self Inserts power and toughness are equal to your life total.
+Whenever The Authors Hot Self Insert takes damage, you lose that much life.
+Retcon — The first time each turn you or a permanent you control are targeted by an ability or spell an opponent controls, 
+you may change the target to another legal target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>*</power>
+      <toughness>*</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheAuthorsHotSelfInsert.jpg</imagepath>
+    <number>0173</number>
+  </card>
+  <card>
+    <name>The Authors Hot Self Insert</name>
+    <cost>5W/U/BW/U/B</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Avatar </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>The Authors Hot Self Inserts power and toughness are equal to your life total.
+Whenever The Authors Hot Self Insert takes damage, you lose that much life.
+Retcon — The first time you or a permanent you control are targeted by an ability or spell an opponent controls, you may change the target to another legal target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>*</power>
+      <toughness>*</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>TheAuthorsHotSelfInsert.jpg</imagepath>
+    <number>0174</number>
+  </card>
+  <card>
+    <name>Endera Mortum</name>
+    <cost>B/RB/R</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Wither (This deals damage to creatures in the form of -1/-1 counters.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>EnderaMortum.jpg</imagepath>
+    <number>0175</number>
+  </card>
+  <card>
+    <name>Garjon</name>
+    <cost>1G/W</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Garjon.jpg</imagepath>
+    <number>0176</number>
+  </card>
+  <card>
+    <name>Kankri Vantas</name>
+    <cost>1W/U</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Crab Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Trolls you control have ward 2.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>mechafan</illustrator>
+    <imagepath>KankriVantas.jpg</imagepath>
+    <number>0177</number>
+  </card>
+  <card>
+    <name>Konyyl Okimaw</name>
+    <cost>RR/GR/GG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Prowess
+Whenever an artifact enters under your control, Konyyl Okimaw fights up to one target creature an opponent controls.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>KonyylOkimaw.jpg</imagepath>
+    <number>0178</number>
+  </card>
+  <card>
+    <name>Lord English, Already Here</name>
+    <cost>3R/GBB</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Angel Avatar </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Emerge 2GGG, haste (You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature’s mana value.)
+RR, T, Put three stun counters on Lord English: Destroy up to three target lands.
+BG, T, Put two stun counters on Lord English: Destroy target creature or artifact.</rules>
+    <flavor>How do you expect to outrun me?
+When I am already here!</flavor>
+    <stats>
+      <power>3</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Zero</illustrator>
+    <imagepath>LordEnglishAlreadyHere.jpg</imagepath>
+    <number>0179</number>
+  </card>
+  <card>
+    <name>Nektan Wheelan</name>
+    <cost>B/RB/R</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Troll Merfolk </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>At the beginning of combat on your turn, you may sacrifice any number of Equipment equipped to Nektan Wheelan. If you do, create three times that many treasure token.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>NektanWheelan.jpg</imagepath>
+    <number>0180</number>
+  </card>
+  <card>
+    <name>Skaian Drop Ship</name>
+    <cost>2G/W</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Vehicle </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Crew 2, Flying (Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)
+When Skaian Drop Ship enters, create 3 white 1/1 Soldier creature tokens.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SkaianDropShip.jpg</imagepath>
+    <number>0181</number>
+  </card>
+  <card>
+    <name>Calsprite</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Legendary Artifact Creature</supertype>
+      <subtype>Toy Spirit </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever you cast a noncreature spell, you may pay 2. If you do, put a +1/+1 counter on Calsprite.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Calsprite.jpg</imagepath>
+    <number>0182</number>
+  </card>
+  <card>
+    <name>Dirkbot</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Robot </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flying, first strike</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>Dirkbot.jpg</imagepath>
+    <number>0183</number>
+  </card>
+  <card>
+    <name>Sol Ring</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add CC.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>SolRing.jpg</imagepath>
+    <number>0184</number>
+  </card>
+  <card>
+    <name>Command Tower</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add one mana of any color in your commander’s color identity.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Andrew Hussie</illustrator>
+    <imagepath>CommandTower.jpg</imagepath>
+    <number>0185</number>
+  </card>
+</spoiler>

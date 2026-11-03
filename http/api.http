@@ -18,11 +18,22 @@ GET http://localhost:3000/set
 Accept: application/json;
 
 ### Post custom set
-POST http://localhost:3000/set
+POST http://localhost:3000/set/mse
 Accept: application/json;
 Content-Type: application/zip
 
 < ./MSPaint Adventures.mse-set
+
+### Post custom set
+POST http://localhost:3000/set/mse/cards/msp
+Accept: application/json;
+Content-Type: application/zip
+
+< ./mspa.xml
+
+### Import cards from official set
+POST http://localhost:3000/set/to/RNA/cards
+Accept: application/json;
 
 ### Get card
 GET http://localhost:3000/card/set/SOM/102
