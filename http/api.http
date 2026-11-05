@@ -30,7 +30,7 @@ Content-Type: application/zip
 ### Post custom set
 POST {{address}}/set/mse/cards/msp
 Accept: application/json;
-Content-Type: application/zip
+Content-Type: text/xml
 
 < ./mspa.xml
 
@@ -59,7 +59,7 @@ GET {{address}}/card/csv/main,1,Leaf-Crowned Visionary,DMU,,,,,,
 Accept: application/json;
 
 ### Get cards in storage
-GET {{address}}/card/set/RNA
+GET {{address}}/card/set/one
 Accept: application/json;
 
 ### Update image of card

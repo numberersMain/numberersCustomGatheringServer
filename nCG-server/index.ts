@@ -59,7 +59,7 @@ app.get('/', (req: Request, res: Response) => {
  *       - in: path
  *         name: code
  *         required: true
- *         description: Set code.
+ *         description: Set code
  *         schema:
  *           type: string
  *     responses:
@@ -84,23 +84,114 @@ app.get('/set', async (req: Request, res: Response) => {
   res.json(instance.listSets());
 });
 
+/**
+ * @openapi
+ * /card/set/{set}/{cardNumber}:
+ *   get:
+ *     description: Card
+ *     summary: Card; loaded from scryfall if not present in storage
+ *     parameters:
+ *       - in: path
+ *         name: set
+ *         required: true
+ *         description: Set code
+ *         schema:
+ *           type: string
+ *       - in: path
+ *         name: cardNumber
+ *         required: true
+ *         description: Collectors number of card
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns card metadata
+ */
 app.get('/card/set/:set/:cardNumber', async (req: Request<{set:string, cardNumber:string}>, res: Response) => {
     const set:string = req.params.set;
     const cardNumber:string = req.params.cardNumber;
   res.json(await cardFrom(set, cardNumber));
 });
+
+/**
+ * @openapi
+ * /card/to/{tol}:
+ *   get:
+ *     description: Card via TappedOut line
+ *     summary: Card; loaded from scryfall if not present in storage
+ *     parameters:
+ *       - in: path
+ *         name: tol
+ *         required: true
+ *         description: Line from a TappedOut deck list
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns card metadata
+ */
 app.get('/card/to/:tol', async (req: Request<{tol:string}>, res: Response) => {
     const tol:string = req.params.tol;
   res.json(await searchByTappedOutLine(tol));
 });
+/**
+ * @openapi
+ * /card/csv/{csv}:
+ *   get:
+ *     description: Card via CSV line
+ *     summary: Card; loaded from scryfall if not present in storage
+ *     parameters:
+ *       - in: path
+ *         name: csv
+ *         required: true
+ *         description: Line from a TappedOut csv export
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns card metadata
+ */
 app.get('/card/csv/:csv', async (req: Request<{csv:string}>, res: Response) => {
     const csv:string = req.params.csv;
   res.json(await searchByCSVLine(csv));
 });
+/**
+ * @openapi
+ * /card/set/{set}:
+ *   get:
+ *     description: List of Cards in Set
+ *     summary: List of Cards present in storage for set
+ *     parameters:
+ *       - in: path
+ *         name: set
+ *         required: true
+ *         description: Set code
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns set metadata
+ */
 app.get('/card/set/:set', async (req: Request<{set:string}>, res: Response) => {
   res.json(instance.listCardsInSet(req.params.set));
 });
 
+/**
+ * @openapi
+ * /cards/import/csv:
+ *   post:
+ *     description: Import Cards From Scryfall via CSV
+ *     summary: Cards; loaded from scryfall if not present in storage
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         text/csv:
+ *           schema:
+ *             type: string
+ *     responses:
+ *       200:
+ *         description: Returns loaded cards
+ */
 app.post('/cards/import/csv', async (req: Request, res: Response) => {
   const csv:string = req.body;
     const cards:CardIdentity[] = [];
@@ -114,25 +205,121 @@ app.post('/cards/import/csv', async (req: Request, res: Response) => {
   res.json(cards);
 });
 
+/**
+ * @openapi
+ * /deck/import/csv/{name}:
+ *   post:
+ *     description: Import Deck via CSV
+ *     summary: Cards; loaded from scryfall if not present in storage
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         text/csv:
+ *           schema:
+ *             type: string
+ *     parameters:
+ *       - in: path
+ *         name: name
+ *         required: true
+ *         description: Deck name
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns deck metadata
+ */
 app.post('/deck/import/csv/:name', async (req: Request<{name:string}>, res: Response) => {
   const csv:string = req.body;
     const deck = await importDeckFromCSV(csv, req.params.name);
   res.json(deck);
 });
 
+/**
+ * @openapi
+ * /set/mse:
+ *   post:
+ *     description: Import Custom Set
+ *     summary: Import set made in MSE
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/zip:
+ *           schema:
+ *             type: string
+ *     responses:
+ *       200:
+ *         description: Returns set metadata
+ */
 app.post('/set/mse', async (req: Request, res: Response) => {
   const set = await importSetFromMSE(req.body);
   res.json(set);
 });
+/**
+ * @openapi
+ * /set/mse/cards/{code}:
+ *   post:
+ *     description: Import Cards for Custom Set
+ *     summary: Import XML Export from MSE
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         text/xml:
+ *           schema:
+ *             type: string
+ *     parameters:
+ *       - in: path
+ *         name: code
+ *         required: true
+ *         description: Set code
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns cards metadata
+ */
 app.post('/set/mse/cards/:code', async (req: Request<{code:string}>, res: Response) => {
   const cards = await importCardsForCustomSet(req.params.code, req.body);
   res.json(cards);
 });
+/**
+ * @openapi
+ * /set/to/{code}/cards:
+ *   post:
+ *     description: Import Cards for Custom Set
+ *     summary: Import Cards; loaded from scryfall if not present in storage
+ *     parameters:
+ *       - in: path
+ *         name: code
+ *         required: true
+ *         description: Set code
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns cards metadata
+ */
 app.post('/set/to/:code/cards', async (req: Request<{code:string}>, res: Response) => {
   const cards = await importCardsForOfficialSet(req.params.code);
   res.json(cards);
 });
 
+/**
+ * @openapi
+ * /deck/id/{id}:
+ *   get:
+ *     description: Deck
+ *     summary: Deck
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: Deck id
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns deck metadata
+ */
 app.get('/deck/id/:id', async (req: Request<{id:string}>, res: Response) => {
     const id:string = req.params.id;
     if (instance.existsDeck(id))
@@ -142,14 +329,76 @@ app.get('/deck/id/:id', async (req: Request<{id:string}>, res: Response) => {
       res.send("Deck not found");
     }
 });
+/**
+ * @openapi
+ * /deck:
+ *   get:
+ *     description: List of Decks
+ *     summary: List of Decks
+ *     responses:
+ *       200:
+ *         description: Returns deck metadata
+ */
 app.get('/deck', async (req: Request, res: Response) => {
   res.json(instance.listDecks());
 });
 
+/**
+ * @openapi
+ * /card/set/{set}/{cardNumber}/image:
+ *   get:
+ *     description: Card Image
+ *     summary: Card Image; Loaded from Scryfall if not present in storage
+ *     parameters:
+ *       - in: path
+ *         name: set
+ *         required: true
+ *         description: Set code
+ *         schema:
+ *           type: string
+ *       - in: path
+ *         name: cardNumber
+ *         required: true
+ *         description: Collectors number of card
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns card image
+ */
 app.get('/card/set/:set/:cardNumber/image', async (req: Request<{set:string, cardNumber:string}>, res: Response) => {
   res.type("image/png");
   res.send((await instance.loadImage(req.params.set, req.params.cardNumber)));
 });
+/**
+ * @openapi
+ * /card/set/{set}/{cardNumber}/image:
+ *   post:
+ *     description: Card Image
+ *     summary: Card Image
+ *     parameters:
+ *       - in: path
+ *         name: set
+ *         required: true
+ *         description: Set code
+ *         schema:
+ *           type: string
+ *       - in: path
+ *         name: cardNumber
+ *         required: true
+ *         description: Collectors number of card
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         image/png:
+ *           schema:
+ *             type: buffer
+ *     responses:
+ *       200:
+ *         description: Returns card image
+ */
 app.post('/card/set/:set/:cardNumber/image', async (req: Request<{set:string, cardNumber:string}>, res: Response) => {
   res.type("image/png");
   res.send(instance.storeImage(req.params.set, req.params.cardNumber, req.body));
