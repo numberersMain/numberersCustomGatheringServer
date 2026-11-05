@@ -1,107 +1,110 @@
+@address = http://2.31.152.184:3000
+//@address = http://localhost:3000
+
 ### Get HelloWorld
-GET http://localhost:3000/
+GET {{address}}
 
 ### Get set
-GET http://localhost:3000/set/SOM
+GET {{address}}/set/SOM
 Accept: application/json;
 
 ### Get set
-GET http://localhost:3000/set/RNA
+GET {{address}}/set/RNA
 Accept: application/json;
 
 ### Get set
-GET http://localhost:3000/set/XXX
+GET {{address}}/set/XXX
 Accept: application/json;
 
 ### Get sets
-GET http://localhost:3000/set
+GET {{address}}/set
 Accept: application/json;
 
 ### Post custom set
-POST http://localhost:3000/set/mse
+POST {{address}}/set/mse
 Accept: application/json;
 Content-Type: application/zip
 
 < ./MSPaint Adventures.mse-set
 
 ### Post custom set
-POST http://localhost:3000/set/mse/cards/msp
+POST {{address}}/set/mse/cards/msp
 Accept: application/json;
 Content-Type: application/zip
 
 < ./mspa.xml
 
 ### Import cards from official set
-POST http://localhost:3000/set/to/RNA/cards
+POST {{address}}/set/to/RNA/cards
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/card/set/SOM/102
+GET {{address}}/card/set/SOM/102
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/card/set/RNA/3
+GET {{address}}/card/set/RNA/3
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/card/to/1x Woodland Mystic
+GET {{address}}/card/to/1x Woodland Mystic
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/card/csv/main,1,"Maralen, Fae Ascendant",ECL,,,,,,True
+GET {{address}}/card/csv/main,1,"Maralen, Fae Ascendant",ECL,,,,,,True
 Accept: application/json;
 
 ### Get card
-GET http://localhost:3000/card/csv/main,1,Leaf-Crowned Visionary,DMU,,,,,,
+GET {{address}}/card/csv/main,1,Leaf-Crowned Visionary,DMU,,,,,,
 Accept: application/json;
 
-### Get cards
-GET http://localhost:3000/card/set/RNA
+### Get cards in storage
+GET {{address}}/card/set/RNA
 Accept: application/json;
 
 ### Update image of card
-POST http://localhost:3000/card/set/SOM/102/image
+POST {{address}}/card/set/SOM/102/image
 Accept: image/png;
 Content-Type: image/png
 
 < ./jerso.png
 
 ### Get image of card
-GET http://localhost:3000/card/set/afr/46/image
+GET {{address}}/card/set/afr/46/image
 Accept: image/png;
 
-### Get cards
-POST http://localhost:3000/cards/import/csv
+### Import cards
+POST {{address}}/cards/import/csv
 Accept: application/json;
 Content-Type: text/csv;
 
 < ./elves.csv
 
-### Import deck
-POST http://localhost:3000/deck/import/csv/Elves In A Hot Tub
+### Import deck csv
+POST {{address}}/deck/import/csv/Elves In A Hot Tub
 Accept: application/json;
 Content-Type: text/csv;
 
 < ./elves.csv
 
-### Import deck
-POST http://localhost:3000/deck/import/csv/Prolif3rate
+### Import deck csv
+POST {{address}}/deck/import/csv/Prolif3rate
 Accept: application/json;
 Content-Type: text/csv;
 
 < ./prolif3rate.csv
 
 ### Get deck
-GET http://localhost:3000/deck/id/Prolif3rate
+GET {{address}}/deck/id/Prolif3rate
 Accept: application/json;
 Content-Type: text/csv;
 
 ### Get nonexistant deck
-GET http://localhost:3000/deck/id/splurge
+GET {{address}}/deck/id/splurge
 Accept: application/json;
 Content-Type: text/csv;
 
 ### List decks
-GET http://localhost:3000/deck
+GET {{address}}/deck
 Accept: application/json;
 Content-Type: text/csv;

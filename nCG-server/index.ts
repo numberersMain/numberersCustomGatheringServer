@@ -40,6 +40,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsdoc({
  * /:
  *   get:
  *     description: Hello World
+ *     summary: Hello World
  *     responses:
  *       200:
  *         description: Returns hello world.
@@ -53,6 +54,7 @@ app.get('/', (req: Request, res: Response) => {
  * /set/{code}:
  *   get:
  *     description: Set
+ *     summary: Set
  *     parameters:
  *       - in: path
  *         name: code
@@ -68,6 +70,16 @@ app.get('/set/:code', async (req: Request<{code:string}>, res: Response) => {
     const code:string = req.params.code;
   res.json(await setFrom(code));
 });
+/**
+ * @openapi
+ * /set:
+ *   get:
+ *     description: List of Sets
+ *     summary: List of Sets
+ *     responses:
+ *       200:
+ *         description: Returns set metadata
+ */
 app.get('/set', async (req: Request, res: Response) => {
   res.json(instance.listSets());
 });
