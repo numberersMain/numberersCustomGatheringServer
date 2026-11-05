@@ -1,3 +1,4 @@
+import { XMLParser } from "fast-xml-parser";
 import { instance } from "../persistance/persistance.ts";
 import { Card, cardExists, OfficialCard } from "../types/card.ts";
 import { OfficialSet, type Set } from "../types/set.ts";
@@ -27,5 +28,42 @@ export async function importCardsForOfficialSet(set: string): Promise<OfficialCa
 }
 
 export async function importCardsForCustomSet(set: string, cardsXml:string): Promise<Card[]> {
-    throw new Error("Not implemented yet");
+    const parser = new XMLParser();
+    const json = parser.parse(cardsXml);
+    const jsonCards = json.spoiler.card;
+    const cards:Card[] = [];
+    for (const cardJson of jsonCards) {
+        const card = new Card(set, cardJson.number);
+        card.artist = cardJson.illustrator;
+        // card.colorIdentity = calculateColorIdentity(cardJson.cost, cardJson.rules);
+        // card.colors = calculateColors(cardJson.cost);
+        card.power = cardJson.stats.power;
+        card.toughness = cardJson.stats.toughness;
+        card.flavorText = cardJson.flavor;
+        card.manaCost = cardJson.cost;
+        // card.manaValue = calculateManaValue(cardJson.cost);
+        card.name = cardJson.name;
+        card.oracleText = cardJson.rules;
+        card.typeLine = calculateTypeLine(cardJson.type);
+        instance.storeCard(set, cardJson.number, card);
+        cards.push(card);
+    }
+    return cards;
 }
+
+function calculateColorIdentity(cost: string, rules: string): string {
+    throw new Error("Function not implemented.");
+}
+
+function calculateColors(cost: string): string {
+    throw new Error("Function not implemented.");
+}
+
+function calculateManaValue(cost: string): number {
+    throw new Error("Function not implemented.");
+}
+
+function calculateTypeLine(type: {supertype:string, subtype:string}): string {
+    return type.supertype + ((type.supertype && type.subtype) ? " - " : "") + type.subtype;
+}
+

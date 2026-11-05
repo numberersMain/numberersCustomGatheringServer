@@ -1,5 +1,5 @@
-@address = http://2.31.152.184:3000
-//@address = http://localhost:3000
+//@address = http://2.31.152.184:3000
+@address = http://localhost:3000
 
 ### Get HelloWorld
 GET {{address}}
